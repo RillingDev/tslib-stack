@@ -1,0 +1,30 @@
+{
+    "name": "eslib-stack",
+    "version": "v5.1.2",
+    "description": "Chevron is an extremely small(1.0kB) JavaScript service library for easy dependency managment and lazy module loading.",
+    "main": "dist/chevron.js",
+    "authors": [
+        "Felix Rilling"
+    ],
+    "license": "Felix Rilling",
+    "keywords": [
+        "dependencies",
+        "services"
+    ],
+    "homepage": "https://github.com/FelixRilling/eslib-stack#readme",
+    "ignore": [
+        "**/.*",
+        ".git/",
+        ".tmp/",
+        "node_modules/",
+        "npm-debug.*",
+        "chevron-logo.png",
+        "chevron-logo.psd"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/FelixRilling/eslib-stack.git"
+    },
+    "author": "Felix Rilling",
+    "bugs": "Felix Rilling"
+}
