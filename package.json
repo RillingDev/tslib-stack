@@ -1,7 +1,7 @@
 {
     "name": "eslib-stack",
-    "version": "v5.1.2",
-    "description": "Chevron is an extremely small(1.0kB) JavaScript service library for easy dependency managment and lazy module loading.",
+    "version": "v1.0.0",
+    "description": "A small & flexible stack for building modern ES6 libraries.",
     "main": "dist/my-lib.js",
     "module": {
         "name": "myLib",
