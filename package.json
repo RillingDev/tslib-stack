@@ -12,9 +12,10 @@
         "url": "git+https://github.com/FelixRilling/eslib-stack.git"
     },
     "scripts": {
-        "start": "npm run sync  && npm run bundle && npm run babel && npm run uglify",
+        "start": "npm run sync  && npm run bundle && npm run babel && npm run uglify && npm run head",
         "sync": "node ./tasks/sync.js",
         "bundle": "rollup -c",
+        "head": "node ./tasks/head.js",
         "babel": "babel ./dist/es6 --out-dir ./dist",
         "uglify": "node ./tasks/uglify.js"
     },

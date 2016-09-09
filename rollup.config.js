@@ -6,11 +6,11 @@ import {
 import commonjs from "rollup-plugin-commonjs";
 import nodeResolve from "rollup-plugin-node-resolve";
 
-const packageJson = require("./package.json");
+const lib = require("./package.json").module;
 
 export default {
-    moduleName: packageJson.module.name,
-    moduleId: packageJson.module.id,
+    moduleName: lib.name,
+    moduleId: lib.id,
     entry: "src/main.js",
     plugins: [
         nodeResolve({
@@ -20,16 +20,16 @@ export default {
         commonjs({})
     ],
     targets: [{
-        dest: `dist/es6/${packageJson.module.id}.amd.js`,
+        dest: `dist/es6/${lib.id}.amd.js`,
         format: "amd"
     }, {
-        dest: `dist/es6/${packageJson.module.id}.common.js`,
+        dest: `dist/es6/${lib.id}.common.js`,
         format: "cjs"
     }, {
-        dest: `dist/es6/${packageJson.module.id}.es.js`,
+        dest: `dist/es6/${lib.id}.es.js`,
         format: "es"
     }, {
-        dest: `dist/es6/${packageJson.module.id}.js`,
+        dest: `dist/es6/${lib.id}.js`,
         format: "iife"
     }]
 };

@@ -1,17 +1,24 @@
-const myString = "fooBar";
+/**
+ * myLib v1.0.0
+ * Author: Felix Rilling
+ * Homepage: https://github.com/FelixRilling/eslib-stack#readme
+ * License: MIT
+ */
 
-function console$1(msg) {
-    return console.log(msg);
-}
-
-function foo3(foo) {
+function foo (foo) {
     return foo.repeat(3);
 }
 
+function bar (msg) {
+    return console.log(msg);
+}
+
+const myString = "fooBar";
+
 const myLib = {
     myString,
-    console: console$1,
-    foo3
+    foo,
+    bar
 };
 
 export default myLib;

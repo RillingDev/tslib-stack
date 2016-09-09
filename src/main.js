@@ -1,17 +1,15 @@
 "use strict";
 
+import foo from "./methods/foo";
+import bar from "./methods/bar";
 import {
     myString
 } from "./constants";
 
-import console from "./methods/console";
-import foo3 from "./methods/foo3";
-
-
 const myLib = {
     myString,
-    console,
-    foo3
+    foo,
+    bar
 };
 
 export default myLib;
