@@ -3,20 +3,21 @@
 
 const fs = require("fs");
 const packageJson = require("../package.json");
-const lib = packageJson.module;
+const id = packageJson.module.id;
+const base = "./dist/";
 const files = [
-    `es6/${lib.id}.amd.js`,
-    `es6/${lib.id}.common.js`,
-    `es6/${lib.id}.es.js`,
-    `es6/${lib.id}.js`,
-    `${lib.id}.amd.js`,
-    `${lib.id}.common.js`,
-    `${lib.id}.es.js`,
-    `${lib.id}.js`
+    `es6/${id}.amd.js`,
+    `es6/${id}.common.js`,
+    `es6/${id}.es.js`,
+    `es6/${id}.js`,
+    `${id}.amd.js`,
+    `${id}.common.js`,
+    `${id}.es.js`,
+    `${id}.js`
 ];
 const head =
-`/**
- * ${lib.name} ${packageJson.version}
+    `/**
+ * ${packageJson.module.name} ${packageJson.version}
  * Author: ${packageJson.author}
  * Homepage: ${packageJson.homepage}
  * License: ${packageJson.license}
@@ -25,15 +26,13 @@ const head =
 `;
 
 function writeHeader(file) {
-    const path = `./dist/${file}`;
+    const path = base + file;
 
     fs.readFile(path, function read(err, data) {
-
         if (err) {
             throw err;
         }
-
-        fs.writeFile(path, head + data, function (err) {
+        fs.writeFile(path, head + data, function(err) {
             if (err) {
                 throw err;
             }

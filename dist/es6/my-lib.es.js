@@ -1,5 +1,5 @@
 /**
- * myLib v1.0.0
+ * myLib v2.0.0
  * Author: Felix Rilling
  * Homepage: https://github.com/FelixRilling/eslib-stack#readme
  * License: MIT
