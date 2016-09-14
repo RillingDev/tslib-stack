@@ -12,12 +12,14 @@
         "url": "git+https://github.com/FelixRilling/eslib-stack.git"
     },
     "scripts": {
-        "start": "npm run sync  && npm run bundle && npm run babel && npm run uglify && npm run head",
-        "sync": "node ./tasks/sync.js",
+        "start": "npm run dist",
+        "dist": "npm run sync  && npm run build && npm run uglify && npm run header",
+        "build": "npm run bundle && npm run babel",
         "bundle": "rollup -c",
         "babel": "rollup -c ./rollup.babel.config.js",
-        "head": "node ./tasks/head.js",
-        "uglify": "node ./tasks/uglify.js"
+        "uglify": "node ./tasks/uglify.js",
+        "sync": "node ./tasks/sync.js",
+        "header": "node ./tasks/header.js"
     },
     "keywords": [
         "dependencies",
