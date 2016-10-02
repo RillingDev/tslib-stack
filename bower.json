@@ -8,8 +8,8 @@
     ],
     "license": "Felix Rilling",
     "keywords": [
-        "dependencies",
-        "services"
+        "stack",
+        "es"
     ],
     "homepage": "https://github.com/FelixRilling/eslib-stack#readme",
     "ignore": [
@@ -19,8 +19,8 @@
         "bower_components/",
         "npm-debug.*",
         ".DS_Store",
-        "chevron-logo.png",
-        "chevron-logo.psd"
+        "logo.png",
+        "logo.psd"
     ],
     "repository": {
         "type": "git",
