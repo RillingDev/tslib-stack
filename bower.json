@@ -1,6 +1,6 @@
 {
     "name": "eslib-stack",
-    "version": "v2.0.0",
+    "version": "v2.1.0",
     "description": "A small & flexible stack for building modern ES6 libraries.",
     "main": "dist/chevron.js",
     "authors": [
@@ -15,12 +15,12 @@
     "ignore": [
         ".git/",
         ".tmp/",
+        "test/",
+        "spec/",
         "node_modules/",
         "bower_components/",
-        "npm-debug.*",
         ".DS_Store",
-        "logo.png",
-        "logo.psd"
+        "npm-debug.*"
     ],
     "repository": {
         "type": "git",

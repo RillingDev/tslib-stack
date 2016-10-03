@@ -1,5 +1,5 @@
 /**
- * myLib v2.0.0
+ * myLib v2.1.0
  * Author: Felix Rilling
  * Homepage: https://github.com/FelixRilling/eslib-stack#readme
  * License: MIT
@@ -8,11 +8,11 @@
 var myLib = (function () {
 'use strict';
 
-function foo (foo) {
+var foo = function (foo) {
     return foo.repeat(3);
 }
 
-function bar (msg) {
+var bar = function (msg) {
     return console.log(msg);
 }
 

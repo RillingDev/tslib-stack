@@ -2,35 +2,36 @@
     "name": "eslib-stack",
     "version": "v2.1.0",
     "description": "A small & flexible stack for building modern ES6 libraries.",
+    "author": "Felix Rilling",
+    "license": "MIT",
     "main": "dist/my-lib.js",
     "module": {
         "name": "myLib",
         "id": "my-lib"
     },
+    "keywords": [
+        "stack",
+        "es"
+    ],
+    "homepage": "https://github.com/FelixRilling/eslib-stack#readme",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/FelixRilling/eslib-stack.git"
     },
+    "bugs": {
+        "url": "https://github.com/FelixRilling/eslib-stack/issues"
+    },
     "scripts": {
-        "start": "npm run dist",
+        "start": "npm run dist && npm run test",
         "dist": "npm run sync  && npm run build && npm run uglify && npm run header",
         "build": "npm run bundle && npm run babel",
         "bundle": "rollup -c",
         "babel": "rollup -c ./rollup.babel.config.js",
         "uglify": "node ./tasks/uglify.js",
         "sync": "node ./tasks/sync.js",
-        "header": "node ./tasks/header.js"
+        "header": "node ./tasks/header.js",
+        "test": "jasmine"
     },
-    "keywords": [
-        "stack",
-        "es"
-    ],
-    "author": "Felix Rilling",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/FelixRilling/eslib-stack/issues"
-    },
-    "homepage": "https://github.com/FelixRilling/eslib-stack#readme",
     "devDependencies": {
         "babel-plugin-external-helpers": "^6.8.0",
         "babel-preset-es2015": "^6.16.0",
