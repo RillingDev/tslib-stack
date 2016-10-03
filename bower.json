@@ -1,6 +1,6 @@
 {
     "name": "eslib-stack",
-    "version": "v2.1.0",
+    "version": "v2.2.0",
     "description": "A small & flexible stack for building modern ES6 libraries.",
     "main": "dist/chevron.js",
     "authors": [
