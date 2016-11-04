@@ -6,12 +6,10 @@ const source = require("vinyl-source-stream");
 const packageJson = require("../package.json");
 
 module.exports = function() {
-    gulp.task("bundle-common", function() {
-        return rollup({
-                entry: "./src/main.js",
-                format: "cjs"
-            })
-            .pipe(source(`${packageJson.module.name}.common.js`))
-            .pipe(gulp.dest("./dist"));
-    });
+    return rollup({
+            entry: "./src/main.js",
+            format: "cjs"
+        })
+        .pipe(source(`${packageJson.namespace.file}.common.js`))
+        .pipe(gulp.dest("./dist"));
 };

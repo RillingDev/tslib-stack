@@ -972,6 +972,13 @@ gulp-rename@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/gulp-rename/-/gulp-rename-1.2.2.tgz#3ad4428763f05e2764dec1c67d868db275687817"
 
+gulp-sequence@^0.4.6:
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/gulp-sequence/-/gulp-sequence-0.4.6.tgz#e388d64311046e05547af43035352d9495501c50"
+  dependencies:
+    gulp-util ">=3.0.0"
+    thunks "^4.5.1"
+
 gulp-sourcemaps@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/gulp-sourcemaps/-/gulp-sourcemaps-2.2.0.tgz#dea8a4dc9aa74630a04ae9cf1871a7a08bc1310d"
@@ -987,12 +994,6 @@ gulp-sourcemaps@^2.2.0:
     through2 "2.X"
     vinyl "1.X"
 
-gulp-task-loader@^1.4.4:
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/gulp-task-loader/-/gulp-task-loader-1.4.4.tgz#58ead58179e7adca261a28b96146b254ebb660e8"
-  dependencies:
-    object-assign "^4.0.1"
-
 gulp-uglify@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/gulp-uglify/-/gulp-uglify-2.0.0.tgz#cbe4aae4fe0b6bdd760335bc46f200fff699c4af"
@@ -1006,7 +1007,7 @@ gulp-uglify@^2.0.0:
     uglify-save-license "^0.4.1"
     vinyl-sourcemaps-apply "^0.2.0"
 
-gulp-util@*, gulp-util@^3.0.0, gulp-util@^3.0.1:
+gulp-util@*, gulp-util@^3.0.0, gulp-util@^3.0.1, gulp-util@>=3.0.0:
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/gulp-util/-/gulp-util-3.0.7.tgz#78925c4b8f8b49005ac01a011c557e6218941cbb"
   dependencies:
@@ -2131,6 +2132,10 @@ through2@^2.0.0, through2@2.X:
   dependencies:
     readable-stream "~2.0.0"
     xtend "~4.0.0"
+
+thunks@^4.5.1:
+  version "4.7.5"
+  resolved "https://registry.yarnpkg.com/thunks/-/thunks-4.7.5.tgz#e440b45344183e88b8e878787cf22bfa8d67ade6"
 
 tildify@^1.0.0:
   version "1.2.0"

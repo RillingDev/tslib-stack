@@ -2,7 +2,7 @@
 
 module.exports = function(packageJson) {
     return `/**
- * ${packageJson.module.name} ${packageJson.version}
+ * ${packageJson.namespace.module} ${packageJson.version}
  * Author: ${packageJson.author}
  * Repository: ${packageJson.repository.url}
  */

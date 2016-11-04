@@ -11,20 +11,18 @@ const createHeader = require("./header");
 const packageJson = require("../package.json");
 
 module.exports = function() {
-    gulp.task("bundle-browser", function() {
-        return rollup({
-                entry: "./src/main.js",
-                format: "iife",
-                plugins: [babel()],
-                moduleName: packageJson.module.id
-            })
-            .pipe(source(`${packageJson.module.name}.js`))
-            .pipe(buffer())
-            .pipe(sourcemaps.init({
-                loadMaps: true
-            }))
-            .pipe(header(createHeader(packageJson)))
-            .pipe(sourcemaps.write("."))
-            .pipe(gulp.dest("./dist"));
-    });
+    return rollup({
+            entry: "./src/main.js",
+            format: "iife",
+            plugins: [babel()],
+            moduleName: packageJson.namespace.module
+        })
+        .pipe(source(`${packageJson.namespace.file}.js`))
+        .pipe(buffer())
+        .pipe(sourcemaps.init({
+            loadMaps: true
+        }))
+        .pipe(header(createHeader(packageJson)))
+        .pipe(sourcemaps.write("."))
+        .pipe(gulp.dest("./dist"));
 };
