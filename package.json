@@ -1,46 +1,47 @@
 {
-    "name": "eslib-stack",
-    "version": "v2.2.0",
-    "description": "A small & flexible stack for building modern ES6 libraries.",
-    "author": "Felix Rilling",
-    "license": "MIT",
-    "main": "dist/my-lib.js",
-    "module": {
-        "name": "myLib",
-        "id": "my-lib"
-    },
-    "keywords": [
-        "stack",
-        "es"
-    ],
-    "homepage": "https://github.com/FelixRilling/eslib-stack#readme",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/FelixRilling/eslib-stack.git"
-    },
-    "bugs": {
-        "url": "https://github.com/FelixRilling/eslib-stack/issues"
-    },
-    "scripts": {
-        "start": "npm run dist && npm run test",
-        "dist": "npm run sync  && npm run build && npm run uglify && npm run header",
-        "build": "npm run bundle && npm run babel",
-        "bundle": "rollup -c",
-        "babel": "rollup -c ./rollup.babel.config.js",
-        "uglify": "node ./tasks/uglify.js",
-        "sync": "node ./tasks/sync.js",
-        "header": "node ./tasks/header.js",
-        "test": "jasmine"
-    },
-    "devDependencies": {
-        "babel-plugin-external-helpers": "^6.8.0",
-        "babel-preset-es2015": "^6.16.0",
-        "jasmine": "^2.5.2",
-        "rollup": "^0.36.0",
-        "rollup-plugin-babel": "^2.6.1",
-        "rollup-plugin-commonjs": "^5.0.0",
-        "rollup-plugin-node-resolve": "^2.0.0",
-        "uglify-js": "^2.7.0"
-    },
-    "dependencies": {}
+  "name": "eslib-stack",
+  "version": "v2.4.0",
+  "description": "A small & flexible stack for building modern ES6 libraries.",
+  "author": "Felix Rilling",
+  "license": "MIT",
+  "main": "dist/myLib.common.js",
+  "module": {
+    "name": "myLib",
+    "id": "mylib"
+  },
+  "keywords": [
+    "stack",
+    "es"
+  ],
+  "homepage": "https://github.com/FelixRilling/eslib-stack#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelixRilling/eslib-stack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FelixRilling/eslib-stack/issues"
+  },
+  "scripts": {
+    "start": "gulp",
+    "test": "jasmine"
+  },
+  "devDependencies": {
+    "babel-plugin-external-helpers": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-config-sync": "^1.0.2",
+    "gulp-header": "^1.8.8",
+    "gulp-jasmine": "^2.4.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-task-loader": "^1.4.4",
+    "gulp-uglify": "^2.0.0",
+    "pump": "^1.0.1",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-stream": "^1.14.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {}
 }

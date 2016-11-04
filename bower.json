@@ -1,31 +1,31 @@
 {
-    "name": "eslib-stack",
-    "version": "v2.2.0",
-    "description": "A small & flexible stack for building modern ES6 libraries.",
-    "main": "dist/chevron.js",
-    "authors": [
-        "Felix Rilling"
-    ],
-    "license": "Felix Rilling",
-    "keywords": [
-        "stack",
-        "es"
-    ],
-    "homepage": "https://github.com/FelixRilling/eslib-stack#readme",
-    "ignore": [
-        ".git/",
-        ".tmp/",
-        "test/",
-        "spec/",
-        "node_modules/",
-        "bower_components/",
-        ".DS_Store",
-        "npm-debug.*"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/FelixRilling/eslib-stack.git"
-    },
-    "author": "Felix Rilling",
-    "bugs": "Felix Rilling"
+  "name": "eslib-stack",
+  "version": "v2.4.0",
+  "description": "A small & flexible stack for building modern ES6 libraries.",
+  "main": "dist/chevron.js",
+  "authors": [
+    "Felix Rilling"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "stack",
+    "es"
+  ],
+  "homepage": "https://github.com/FelixRilling/eslib-stack#readme",
+  "ignore": [
+    ".git/",
+    ".tmp/",
+    "test/",
+    "spec/",
+    "node_modules/",
+    "bower_components/",
+    ".DS_Store",
+    "npm-debug.*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelixRilling/eslib-stack.git"
+  },
+  "author": "Felix Rilling",
+  "bugs": "Felix Rilling"
 }

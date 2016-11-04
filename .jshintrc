@@ -58,7 +58,7 @@
     "jquery": false,
     "mocha": false,
     "mootools": false,
-    "node": false,
+    "node": true,
     "nonstandard": false,
     "phantom": false,
     "prototypejs": false,
@@ -70,5 +70,10 @@
     "wsh": false,
     "yui": false,
 
-    "globals": {}
+    "globals": {
+        "element": false,
+        "angular": false,
+        "_": false,
+        "$": false
+    }
 }
