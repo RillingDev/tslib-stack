@@ -1,3 +1,9 @@
+/**
+ * myLib v2.5.0
+ * Author: Felix Rilling
+ * Repository: git+https://github.com/FelixRilling/eslib-stack.git
+ */
+
 'use strict';
 
 var foo = function (foo) {

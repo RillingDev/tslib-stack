@@ -1,5 +1,5 @@
 /**
- * myLib v2.4.0
+ * myLib v2.5.0
  * Author: Felix Rilling
  * Repository: git+https://github.com/FelixRilling/eslib-stack.git
  */
