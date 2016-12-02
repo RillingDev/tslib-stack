@@ -1,14 +1,14 @@
 /**
- * myLib v2.5.0
+ * myLib v2.6.0
  * Author: Felix Rilling
  * Repository: git+https://github.com/FelixRilling/eslib-stack.git
  */
 
-var foo = function (foo) {
+var foo = function(foo) {
     return foo.repeat(3);
 };
 
-var bar = function (msg) {
+var bar = function(msg) {
     return console.log(msg);
 };
 
