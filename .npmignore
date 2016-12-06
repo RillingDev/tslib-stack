@@ -1,8 +1,19 @@
-.git/
-.tmp/
-test/
-spec/
+# System Files
+.DS_Store
+
+# Vendor Files
 node_modules/
 bower_components/
-.DS_Store
+
+# Debug Files
+.tmp/
 npm-debug.*
+
+# Files not needed in the release
+.git/
+test/
+spec/
+demo/
+logo.png
+logo.psd
+yarn.lock

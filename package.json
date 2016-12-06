@@ -1,6 +1,6 @@
 {
     "name": "eslib-stack",
-    "version": "v2.6.0",
+    "version": "v2.7.0",
     "description": "A small & flexible stack for building modern ES6 libraries.",
     "author": "Felix Rilling",
     "license": "MIT",
