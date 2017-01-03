@@ -1,5 +1,7 @@
 "use strict";
 
-export default function(msg) {
-    return console.log(msg);
-}
+const bar = function (n) {
+    return n * n;
+};
+
+export default bar;

@@ -1,5 +1,5 @@
 /**
- * myLib v2.7.0
+ * myLib v2.8.0
  * Author: Felix Rilling
  * Repository: git+https://github.com/FelixRilling/eslib-stack.git
  */
@@ -7,18 +7,17 @@
 var myLib = (function () {
 'use strict';
 
-var foo = function (foo) {
-    return foo.repeat(3);
+var str = "foo";
+
+var foo = function foo(msg) {
+    return str + msg;
 };
 
-var bar = function (msg) {
-    return console.log(msg);
+var bar = function bar(n) {
+    return n * n;
 };
-
-var myString = "fooBar";
 
 var myLib = {
-    myString: myString,
     foo: foo,
     bar: bar
 };

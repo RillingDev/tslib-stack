@@ -1,3 +1,7 @@
 "use strict";
 
-export const myString = "fooBar";
+const str = "foo";
+
+export {
+    str
+};

@@ -1,5 +1,11 @@
 "use strict";
 
-export default function(foo) {
-    return foo.repeat(3);
-}
+import {
+    str
+} from "../constants";
+
+const foo = function (msg) {
+    return str + msg;
+};
+
+export default foo;
