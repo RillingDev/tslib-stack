@@ -1,29 +1,20 @@
-/**
- * myLib v2.8.0
- * Author: Felix Rilling
- * Repository: git+https://github.com/FelixRilling/eslib-stack.git
- */
+var myLib = function () {
+    'use strict';
 
-var myLib = (function () {
-'use strict';
+    const str = "foo";
 
-var str = "foo";
+    const foo = function (msg) {
+        return str + msg;
+    };
 
-var foo = function foo(msg) {
-    return str + msg;
-};
+    const bar = function (n) {
+        return n ** n;
+    };
 
-var bar = function bar(n) {
-    return n * n;
-};
+    const myLib = {
+        foo,
+        bar
+    };
 
-var myLib = {
-    foo: foo,
-    bar: bar
-};
-
-return myLib;
-
-}());
-
-//# sourceMappingURL=myLib.js.map
+    return myLib;
+}();
