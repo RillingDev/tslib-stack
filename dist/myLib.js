@@ -8,7 +8,7 @@ var myLib = function () {
     };
 
     const bar = function (n) {
-        return n ** n;
+        return n * n;
     };
 
     const myLib = {

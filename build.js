@@ -8,15 +8,11 @@ const packageJson = require("./package.json");
 
 const DIR_SRC = "./src/";
 const DIR_DIST = "./dist/";
-const outputPath = DIR_DIST + packageJson.namespace.file;
+const DIR_DIST_FILE = DIR_DIST + packageJson.namespace.file;
 
 rollup
     .rollup({
         entry: DIR_SRC + "main.js",
-    })
-    .catch(err => {
-        console.log("An error occured while bundling");
-        console.log(err);
     })
     .then(bundle => {
         const result = {
@@ -29,13 +25,16 @@ rollup
             iife: babel.transform(bundle.generate({
                 moduleName: packageJson.namespace.module,
                 format: "iife"
-            }).code)
+            }).code),
+            iife_min: null
         };
 
 
-        fs.writeFile(`${outputPath}.js`, result.iife.code, () => {
-            fs.writeFileSync(`${outputPath}.min.js`, uglify.minify(`${outputPath}.js`).code);
-        });
-        fs.writeFileSync(`${outputPath}.es.js`, result.es.code);
-        fs.writeFileSync(`${outputPath}.common.js`, result.cjs.code);
+        fs.writeFileSync(`${DIR_DIST_FILE}.es.js`, result.es.code);
+        fs.writeFileSync(`${DIR_DIST_FILE}.common.js`, result.cjs.code);
+        fs.writeFileSync(`${DIR_DIST_FILE}.js`, result.iife.code);
+
+        result.iife_min = uglify.minify(`${DIR_DIST_FILE}.js`);
+
+        fs.writeFileSync(`${DIR_DIST_FILE}.min.js`, result.iife_min.code);
     });
