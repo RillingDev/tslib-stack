@@ -1,13 +1,7 @@
 {
     "name": "eslib-stack",
-    "version": "v2.7.0",
+    "version": "v2.8.0",
     "description": "A small & flexible stack for building modern ES6 libraries.",
-    "author": "Felix Rilling",
-    "license": "MIT",
-    "keywords": [
-        "stack",
-        "es"
-    ],
     "main": "dist/myLib.common.js",
     "namespace": {
         "module": "myLib",
@@ -19,22 +13,27 @@
         "lint": "./node_modules/.bin/eslint ./src/",
         "test": "./node_modules/.bin/jasmine"
     },
-    "homepage": "https://github.com/FelixRilling/eslib-stack#readme",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/FelixRilling/eslib-stack.git"
     },
+    "keywords": [
+        "stack",
+        "es"
+    ],
+    "author": "Felix Rilling",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/FelixRilling/eslib-stack/issues"
     },
+    "homepage": "https://github.com/FelixRilling/eslib-stack#readme",
     "devDependencies": {
-        "babel-core": "^6.24.0",
+        "babel-core": "^6.24.1",
         "babel-plugin-external-helpers": "^6.22.0",
-        "babel-preset-es2016": "^6.24.0",
+        "babel-preset-es2016": "^6.24.1",
         "eslint": "^3.19.0",
-        "jasmine": "^2.5.0",
-        "rollup": "^0.41.0",
+        "jasmine": "^2.5.3",
+        "rollup": "^0.41.6",
         "uglify-js": "git://github.com/mishoo/UglifyJS2.git#harmony"
-    },
-    "dependencies": {}
+    }
 }
