@@ -4,7 +4,5 @@
             "es2016"
         ]
     ],
-    "plugins": [
-        "external-helpers"
-    ]
+    "plugins": []
 }
