@@ -1,7 +1,7 @@
 "use strict";
 
-const str = "foo";
+const PI = Math.PI;
 
 export {
-    str
+    PI
 };

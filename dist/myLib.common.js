@@ -1,18 +1,14 @@
 'use strict';
 
-const str = "foo";
+const add = (a, b) => a + b;
 
-const foo = function (msg) {
-    return str + msg;
-};
+const PI = Math.PI;
 
-const bar = function (n) {
-    return n * n;
-};
+const addPi = a => add(a, PI);
 
 const myLib = {
-    foo,
-    bar
+    add,
+    addPi
 };
 
 module.exports = myLib;

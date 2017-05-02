@@ -1,11 +1,11 @@
 "use strict";
 
-import foo from "./methods/foo";
-import bar from "./methods/bar";
+import add from "./methods/add";
+import addPi from "./methods/addPi";
 
 const myLib = {
-    foo,
-    bar
+    add,
+    addPi
 };
 
 export default myLib;
