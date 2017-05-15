@@ -1,16 +1,28 @@
 var myLib = function () {
-    'use strict';
+  'use strict';
 
-    const add = (a, b) => a + b;
+  /**
+   * Add two numbers
+   * @param {Number} a
+   * @param {Number} b
+   * @returns {Number}
+   */
 
-    const PI = Math.PI;
+  const add = (a, b) => a + b;
 
-    const addPi = a => add(a, PI);
+  const PI = Math.PI;
 
-    const myLib = {
-        add,
-        addPi
-    };
+  /**
+   * Add Pi to a number
+   * @param {Number} a
+   * @returns {Number}
+   */
+  const addPi = a => add(a, PI);
 
-    return myLib;
+  const myLib = {
+    add,
+    addPi
+  };
+
+  return myLib;
 }();

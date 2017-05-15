@@ -1,6 +1,6 @@
 {
     "name": "eslib-stack",
-    "version": "v2.9.0",
+    "version": "v2.10.0",
     "description": "A small & flexible stack for building modern ES6 libraries.",
     "main": "dist/myLib.common.js",
     "namespace": {
@@ -34,7 +34,7 @@
         "jasmine": "^2.6.0",
         "npm-run-all": "^4.0.2",
         "rollup": "^0.41.6",
-        "uglify-js": "git://github.com/mishoo/UglifyJS2.git#harmony"
+        "uglify-es": "^3.0.4"
     },
     "dependencies": {}
 }
