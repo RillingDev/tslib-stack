@@ -27,12 +27,16 @@ const saveCjs = function (bundle) {
 };
 
 const saveBrowser = function (bundle) {
-    const result = bundle.generate({
+    const result = babel.transform(bundle.generate({
         moduleName: packageJson.namespace.module,
         format: "iife"
-    });
+    }, {
+        compact: false
+    }).code);
+    const result_min = uglify.minify(result.code);
 
     saveOutput(`${DIR_DIST}/${packageJson.namespace.file}.js`, result.code, "JS:IIFE");
+    saveOutput(`${DIR_DIST}/${packageJson.namespace.file}.min.js`, result_min.code, "JS:IIFE-min");
 };
 
 rollup

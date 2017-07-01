@@ -1,6 +1,6 @@
 {
     "name": "eslib-stack",
-    "version": "v4.1.0",
+    "version": "v4.2.0",
     "description": "A small & flexible stack for building modern ES6 libraries.",
     "main": "dist/myLib.common.js",
     "module": "dist/myLib.esm.js",
@@ -11,6 +11,7 @@
     "scripts": {
         "start": "npm-run-all lint build test",
         "build": "node tasks/build.js",
+        "dist": "node tasks/dist.js",
         "lint": "eslint src/",
         "test": "jasmine"
     },
