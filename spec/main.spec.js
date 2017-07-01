@@ -1,8 +1,9 @@
 "use strict";
 
-describe("Main test", function() {
+const myLib = require("../dist/myLib.common.js");
 
-    it("Normal case", function() {
-        expect(1 + 1).toBe(2);
+describe("Main test", function () {
+    it("Normal case", function () {
+        expect(myLib.add(1, 1)).toBe(2);
     });
 });
