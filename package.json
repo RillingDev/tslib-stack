@@ -1,17 +1,26 @@
 {
     "name": "eslib-stack",
-    "version": "v5.0.0",
+    "version": "v6.0.0",
     "description": "A small & flexible stack for building modern ES6 libraries.",
     "main": "dist/myLib.common.js",
     "module": "dist/myLib.esm.js",
-    "namespace": {
-        "module": "myLib",
-        "file": "myLib"
+    "constants": {
+        "dirBase": {
+            "input": "./src",
+            "output": "./dist"
+        },
+        "js": {
+            "input": "main",
+            "namespace": {
+                "module": "myLib",
+                "file": "myLib"
+            }
+        }
     },
     "scripts": {
         "start": "npm-run-all lint build test",
-        "build": "node tasks/build.js",
-        "dist": "node tasks/dist.js",
+        "build": "node tasks/jsDev.js",
+        "dist": "node tasks/jsDist.js",
         "lint": "eslint src/",
         "test": "jasmine"
     },
@@ -30,9 +39,9 @@
     },
     "homepage": "https://github.com/FelixRilling/eslib-stack#readme",
     "devDependencies": {
-        "babel-core": "^7.0.0-alpha.12",
-        "babel-preset-es2016": "^7.0.0-alpha.12",
-        "eslint": "^4.3.0",
+        "babel-core": "^7.0.0-alpha.18",
+        "babel-preset-es2016": "^7.0.0-alpha.18",
+        "eslint": "^4.4.0",
         "eslint-plugin-unicorn": "^2.1.2",
         "jasmine": "^2.7.0",
         "npm-run-all": "^4.0.2",
