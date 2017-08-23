@@ -39,8 +39,8 @@
     },
     "homepage": "https://github.com/FelixRilling/eslib-stack#readme",
     "devDependencies": {
-        "babel-core": "^7.0.0-alpha.18",
-        "babel-preset-es2016": "^7.0.0-alpha.18",
+        "babel-core": "^7.0.0-alpha.19",
+        "babel-preset-env": "^1.6.0",
         "eslint": "^4.5.0",
         "eslint-plugin-unicorn": "^2.1.2",
         "jasmine": "^2.7.0",
