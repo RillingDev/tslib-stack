@@ -1,10 +1,11 @@
-var myLib = function () {
+var myLib = function (exports) {
   'use strict';
   /**
    * Add two numbers
-   * @param {Number} a
-   * @param {Number} b
-   * @returns {Number}
+   *
+   * @param {number} a
+   * @param {number} b
+   * @returns {number}
    */
 
   const add = (a, b) => a + b;
@@ -12,15 +13,14 @@ var myLib = function () {
   const PI = Math.PI;
   /**
    * Add Pi to a number
-   * @param {Number} a
-   * @returns {Number}
+   *
+   * @param {number} a
+   * @returns {number}
    */
 
   const addPi = a => add(a, PI);
 
-  const myLib = {
-    add,
-    addPi
-  };
-  return myLib;
-}();
+  exports.add = add;
+  exports.addPi = addPi;
+  return exports;
+}({});

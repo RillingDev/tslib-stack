@@ -1,8 +1,9 @@
 /**
  * Add two numbers
- * @param {Number} a
- * @param {Number} b
- * @returns {Number}
+ *
+ * @param {number} a
+ * @param {number} b
+ * @returns {number}
  */
 const add = (a, b) => a + b;
 
@@ -10,14 +11,10 @@ const PI = Math.PI;
 
 /**
  * Add Pi to a number
- * @param {Number} a
- * @returns {Number}
+ *
+ * @param {number} a
+ * @returns {number}
  */
 const addPi = a => add(a, PI);
 
-const myLib = {
-    add,
-    addPi
-};
-
-export default myLib;
+export { add, addPi };

@@ -1,5 +1,3 @@
-"use strict";
-
 import {
     PI
 } from "../constants";
@@ -7,8 +5,9 @@ import add from "./add";
 
 /**
  * Add Pi to a number
- * @param {Number} a
- * @returns {Number}
+ *
+ * @param {number} a
+ * @returns {number}
  */
 const addPi = a => add(a, PI);
 

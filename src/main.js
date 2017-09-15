@@ -1,11 +1,7 @@
-"use strict";
+import add from "./lib/add";
+import addPi from "./lib/addPi";
 
-import add from "./methods/add";
-import addPi from "./methods/addPi";
-
-const myLib = {
+export {
     add,
     addPi
 };
-
-export default myLib;
