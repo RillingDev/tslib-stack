@@ -3,12 +3,14 @@
 /* eslint no-console: "off" */
 const fs = require("fs");
 const rollup = require("rollup");
+
 const CONSTANTS = require("../../package.json").constants;
 
 /**
  * Bundles project with given formats
- * @param {Array} formats
- * @param {Array} plugins
+ *
+ * @param {Array<Object>} formats
+ * @param {Array<Object>} plugins
  */
 module.exports = function (formats, plugins) {
     const promises = [];
@@ -27,13 +29,16 @@ module.exports = function (formats, plugins) {
                             format: format.id
                         })
                         .then(result => {
+                            const path = `${CONSTANTS.dirBase.output}/${CONSTANTS.js.namespace.file}${format.ext}.js`;
+
                             fs.writeFile(
-                                `${CONSTANTS.dirBase.output}/${CONSTANTS.js.namespace.file}${format.ext}.js`,
-                                format.fn(result.code),
+                                path,
+                                result.code,
                                 err => {
                                     if (err) {
                                         reject(err);
                                     } else {
+                                        console.log(`Completed bundling ${path}`);
                                         resolve();
                                     }
                                 }
@@ -48,7 +53,7 @@ module.exports = function (formats, plugins) {
             Promise
                 .all(promises)
                 .then(() => {
-                    console.log("Bundling completed");
+                    return 0;
                 })
                 .catch(err => {
                     console.log("One or more errors were encountered during generation");
