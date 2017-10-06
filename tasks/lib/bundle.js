@@ -18,9 +18,6 @@ module.exports = function (formats, plugins) {
             plugins,
             input: `${CONSTANTS.dirBase.input}/${CONSTANTS.js.input}.js`,
         })
-        .catch(err => {
-            console.log(err);
-        })
         .then(bundle => {
             formats.forEach(format => {
                 const bundleFormat = new Promise((resolve, reject) => {
@@ -28,9 +25,6 @@ module.exports = function (formats, plugins) {
                         .generate({
                             name: CONSTANTS.js.namespace.module,
                             format: format.id
-                        })
-                        .catch(err => {
-                            reject(err);
                         })
                         .then(result => {
                             fs.writeFile(
@@ -44,7 +38,8 @@ module.exports = function (formats, plugins) {
                                     }
                                 }
                             );
-                        });
+                        })
+                        .catch(reject);
                 });
 
                 promises.push(bundleFormat);
@@ -52,11 +47,16 @@ module.exports = function (formats, plugins) {
 
             Promise
                 .all(promises)
-                .catch(err => {
-                    console.log("One or more errors were encountered during bundling", err);
-                })
                 .then(() => {
-                    console.log("Bundling complete");
+                    console.log("Bundling completed");
+                })
+                .catch(err => {
+                    console.log("One or more errors were encountered during generation");
+                    console.log(err.message);
                 });
+        })
+        .catch(err => {
+            console.log("One or more errors were encountered during bundling");
+            console.log(err.message);
         });
 };

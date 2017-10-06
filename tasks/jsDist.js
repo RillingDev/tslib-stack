@@ -3,18 +3,7 @@
 const babel = require("babel-core");
 const uglify = require("uglify-es");
 const bundle = require("./lib/bundle");
-
-const OPTIONS_BABEL = {
-    compact: false,
-    ast: false,
-    presets: [
-        ["env", {
-            targets: {
-                browsers: "chrome >= 58",
-            }
-        }]
-    ]
-};
+const resolve = require("rollup-plugin-node-resolve");
 
 bundle([{
     id: "es",
@@ -30,10 +19,18 @@ bundle([{
     id: "iife",
     ext: "",
     name: "IIFE",
-    fn: code => babel.transform(code, OPTIONS_BABEL).code
+    fn: code => babel.transform(code, {
+        compact: false
+    }).code
 }, {
     id: "iife",
     ext: ".min",
     name: "IIFE:min",
-    fn: code => uglify.minify(babel.transform(code, OPTIONS_BABEL).code).code
-}], []);
+    fn: code => uglify.minify(
+        babel.transform(code, {
+            compact: false
+        }).code
+    ).code
+}], [
+    resolve()
+]);

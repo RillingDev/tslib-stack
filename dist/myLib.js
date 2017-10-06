@@ -1,5 +1,3 @@
-"use strict";
-
 var myLib = function (exports) {
   'use strict';
   /**
