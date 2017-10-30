@@ -2,8 +2,8 @@
 
 /* eslint no-console: "off" */
 const fs = require("fs");
+const path = require("path");
 const rollup = require("rollup");
-
 const CONSTANTS = require("../../package.json").constants;
 
 /**
@@ -21,7 +21,7 @@ const createBundle = (format, bundle) => new Promise((resolve, reject) => {
         })
         .then(result => {
             fs.writeFile(
-                `${CONSTANTS.dirBase.output}/${CONSTANTS.js.namespace.file}${format.ext}.js`,
+                path.join(CONSTANTS.dirBase.output, `${CONSTANTS.js.namespace.file}${format.ext}.js`),
                 result.code,
                 err => err ? reject(err) : resolve(0)
             );
@@ -39,7 +39,7 @@ module.exports = function (formats, plugins) {
     rollup
         .rollup({
             plugins,
-            input: `${CONSTANTS.dirBase.input}/${CONSTANTS.js.input}.js`,
+            input: path.join(CONSTANTS.dirBase.input, CONSTANTS.js.input),
         })
         .then(bundle => {
             Promise

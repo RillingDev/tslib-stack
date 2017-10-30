@@ -10,7 +10,7 @@
             "output": "./dist"
         },
         "js": {
-            "input": "main",
+            "input": "main.js",
             "namespace": {
                 "module": "myLib",
                 "file": "myLib"
