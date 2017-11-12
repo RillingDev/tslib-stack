@@ -8,9 +8,11 @@ var myLib = (function (exports) {
  * @param {number} b
  * @returns {number}
  */
-const add = (a, b) => a + b;
+var add = function add(a, b) {
+  return a + b;
+};
 
-const PI = Math.PI;
+var PI = Math.PI;
 
 /**
  * Add Pi to a number
@@ -18,7 +20,9 @@ const PI = Math.PI;
  * @param {number} a
  * @returns {number}
  */
-const addPi = a => add(a, PI);
+var addPi = function addPi(a) {
+  return add(a, PI);
+};
 
 exports.add = add;
 exports.addPi = addPi;
