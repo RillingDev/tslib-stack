@@ -1,28 +1,23 @@
 {
     "name": "eslib-stack",
-    "version": "v8.1.0",
+    "version": "v9.0.0",
     "description": "A small & flexible stack for building modern ES6 libraries.",
     "main": "dist/myLib.common.js",
-    "module": "dist/myLib.esm.js",
-    "constants": {
-        "js": {
-            "input": "main.js",
-            "namespace": {
-                "module": "myLib",
-                "file": "myLib"
-            },
-            "targets": {
-                "browsers": [
-                    "Chrome >= 60"
-                ]
-            }
+    "module": "dist/myLib.mjs",
+    "settings": {
+        "input": "main.js",
+        "namespace": {
+            "module": "myLib",
+            "file": "myLib"
         }
     },
     "scripts": {
         "start": "npm-run-all lint build test",
-        "build": "npm-run-all dev",
-        "dev": "node tasks/jsDev.js",
-        "dist": "node tasks/jsDist.js",
+        "build": "rollup -c ./tasks/rollup.config.js",
+        "build:iife": "rollup -c ./tasks/rollup.config.iife.js",
+        "build:iife-min": "rollup -c ./tasks/rollup.config.iife-min.js",
+        "watch": "rollup -c ./tasks/rollup.config.js --watch",
+        "dist": "npm-run-all --parallel build build:iife build:iife-min",
         "lint": "eslint src/",
         "test": "jasmine"
     },
@@ -42,16 +37,17 @@
     "homepage": "https://github.com/FelixRilling/eslib-stack#readme",
     "dependencies": {},
     "devDependencies": {
-        "babel-core": "^6.26.0",
-        "babel-plugin-external-helpers": "^6.22.0",
-        "babel-preset-env": "^1.6.1",
+        "@babel/core": "^7.0.0-beta.36",
+        "@babel/plugin-external-helpers": "^7.0.0-beta.36",
+        "@babel/preset-env": "^7.0.0-beta.36",
         "eslint": "^4.14.0",
         "jasmine": "^2.8.0",
         "npm-run-all": "^4.1.2",
         "rollup": "^0.53.0",
-        "rollup-plugin-babel": "^3.0.2",
+        "rollup-plugin-babel": "^4.0.0-beta.0",
+        "rollup-plugin-json": "^2.3.0",
         "rollup-plugin-node-resolve": "^3.0.0",
         "rollup-plugin-uglify-es": "0.0.1",
-        "uglify-es": "^3.2.2"
+        "uglify-es": "^3.3.2"
     }
 }
