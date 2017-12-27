@@ -9,9 +9,6 @@ bundle([{
 }, {
     type: "cjs",
     ext: ".common",
-}, {
-    type: "iife",
-    ext: "",
 }], [
     resolve()
 ]);

@@ -1,14 +1,10 @@
 {
     "name": "eslib-stack",
-    "version": "v8.0.0",
+    "version": "v8.1.0",
     "description": "A small & flexible stack for building modern ES6 libraries.",
     "main": "dist/myLib.common.js",
     "module": "dist/myLib.esm.js",
     "constants": {
-        "dirBase": {
-            "input": "./src",
-            "output": "./dist"
-        },
         "js": {
             "input": "main.js",
             "namespace": {
@@ -49,13 +45,13 @@
         "babel-core": "^6.26.0",
         "babel-plugin-external-helpers": "^6.22.0",
         "babel-preset-env": "^1.6.1",
-        "eslint": "^4.13.0",
+        "eslint": "^4.14.0",
         "jasmine": "^2.8.0",
         "npm-run-all": "^4.1.2",
-        "rollup": "^0.52.1",
+        "rollup": "^0.53.0",
         "rollup-plugin-babel": "^3.0.2",
         "rollup-plugin-node-resolve": "^3.0.0",
         "rollup-plugin-uglify-es": "0.0.1",
-        "uglify-es": "^3.2.1"
+        "uglify-es": "^3.2.2"
     }
 }
