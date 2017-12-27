@@ -15,6 +15,6 @@ const PI = Math.PI;
  * @param {number} a
  * @returns {number}
  */
-const addPi = a => add(a, PI);
+const addPi = (a) => add(a, PI);
 
 export { add, addPi };

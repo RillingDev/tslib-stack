@@ -4,8 +4,9 @@
     "description": "A small & flexible stack for building modern ES6 libraries.",
     "main": "dist/myLib.common.js",
     "module": "dist/myLib.mjs",
+    "types": "dist/main.d.ts",
     "settings": {
-        "input": "main.js",
+        "input": "main.ts",
         "namespace": {
             "module": "myLib",
             "file": "myLib"
@@ -40,14 +41,16 @@
         "@babel/core": "^7.0.0-beta.36",
         "@babel/plugin-external-helpers": "^7.0.0-beta.36",
         "@babel/preset-env": "^7.0.0-beta.36",
-        "eslint": "^4.14.0",
         "jasmine": "^2.8.0",
         "npm-run-all": "^4.1.2",
         "rollup": "^0.53.0",
         "rollup-plugin-babel": "^4.0.0-beta.0",
         "rollup-plugin-json": "^2.3.0",
         "rollup-plugin-node-resolve": "^3.0.0",
+        "rollup-plugin-typescript2": "^0.9.0",
         "rollup-plugin-uglify-es": "0.0.1",
+        "tslint": "^5.8.0",
+        "typescript": "^2.6.2",
         "uglify-es": "^3.3.2"
     }
 }

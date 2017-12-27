@@ -5,6 +5,5 @@
  * @param {number} b
  * @returns {number}
  */
-const add = (a, b) => a + b;
-
+declare const add: (a: number, b: number) => number;
 export default add;

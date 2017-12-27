@@ -1,5 +1,6 @@
 import json from "rollup-plugin-json";
 import resolve from "rollup-plugin-node-resolve";
+import typescript from "rollup-plugin-typescript2";
 import babel from "rollup-plugin-babel";
 import uglify from "rollup-plugin-uglify-es";
 import { settings } from "../package.json";
@@ -14,5 +15,8 @@ export default {
             sourcemap: true
         }
     ],
-    plugins: [json(), resolve(), babel(), uglify()]
+    plugins: [json(), resolve(), typescript({
+        cacheRoot: "./.cache/ts",
+        tsconfigOverride: { declaration: false }
+    }), babel(), uglify()]
 };
