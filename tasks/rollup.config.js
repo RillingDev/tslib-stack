@@ -16,6 +16,14 @@ export default {
         }
     ],
     plugins: [json(), resolve(), typescript({
-        cacheRoot: "./.cache/ts"
+        cacheRoot: "./.cache/ts",
+        tsconfigOverride: {
+            compilerOptions:
+                {
+                    declaration: true,
+                    declarationDir: "./types",
+                }
+        },
+        useTsconfigDeclarationDir: true
     })]
 };

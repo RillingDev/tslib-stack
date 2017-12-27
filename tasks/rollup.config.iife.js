@@ -15,7 +15,6 @@ export default {
         }
     ],
     plugins: [json(), resolve(), typescript({
-        cacheRoot: "./.cache/ts",
-        tsconfigOverride: { declaration: false }
+        cacheRoot: "./.cache/ts"
     }), babel()]
 };
