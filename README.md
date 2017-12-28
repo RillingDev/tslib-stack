@@ -1,3 +1,11 @@
-# eslib-Stack
+# eslib-stack
 
-> A small & flexible stack for building modern ES6 libraries.
+> A small & powerful stack for building modern JavaScript libraries.
+
+Tools included:
+- TypeScript
+- TSLint
+- JSDoc
+- Rollup
+- Babel
+- Uglify-ES
