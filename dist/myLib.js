@@ -1,19 +1,6 @@
 var myLib = (function (exports) {
 'use strict';
 
-var _sPO = Object.setPrototypeOf || function _sPO(o, p) {
-  o.__proto__ = p;
-  return o;
-};
-
-var _construct = typeof Reflect === "object" && Reflect.construct || function _construct(Parent, args, Class) {
-  var Constructor,
-      a = [null];
-  a.push.apply(a, args);
-  Constructor = Parent.bind.apply(Parent, a);
-  return _sPO(new Constructor(), Class.prototype);
-};
-
 /**
  * Add two numbers
  *
@@ -31,8 +18,7 @@ const PI = Math.PI;
  * @param {number} a
  * @returns {number}
  */
-
-const addPi = a => add(a, PI);
+const addPi = (a) => add(a, PI);
 
 exports.add = add;
 exports.addPi = addPi;

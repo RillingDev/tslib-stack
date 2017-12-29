@@ -15,15 +15,19 @@ export default {
             file: `./dist/${settings.namespace.file}.common.js`
         }
     ],
-    plugins: [json(), resolve(), typescript({
-        cacheRoot: "./.cache/ts",
-        tsconfigOverride: {
-            compilerOptions:
-                {
-                    declaration: true,
-                    declarationDir: "./types",
-                }
-        },
-        useTsconfigDeclarationDir: true
-    })]
+    plugins: [
+        json(),
+        resolve(),
+        typescript({
+            cacheRoot: "./.cache/ts",
+            tsconfigOverride: {
+                compilerOptions:
+                    {
+                        declaration: true,
+                        declarationDir: "./types",
+                    }
+            },
+            useTsconfigDeclarationDir: true
+        })
+    ]
 };
