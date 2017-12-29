@@ -8,7 +8,7 @@ export default {
     output: [
         {
             format: "es",
-            file: `./dist/${settings.namespace.file}.mjs`
+            file: `./dist/${settings.namespace.file}.esm.js`
         },
         {
             format: "cjs",

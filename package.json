@@ -3,7 +3,7 @@
     "version": "v9.0.0",
     "description": "A small & flexible stack for building modern ES6 libraries.",
     "main": "dist/myLib.common.js",
-    "module": "dist/myLib.mjs",
+    "module": "dist/myLib.esm.js",
     "types": "types/main.d.ts",
     "settings": {
         "input": "main.ts",

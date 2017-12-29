@@ -8,7 +8,7 @@
     "source": {
         "include": [
             "./README.md",
-            "./dist/myLib.common.js"
+            "./dist/myLib.esm.js"
         ],
         "excludePattern": "(node_modules/|docs/)"
     },
