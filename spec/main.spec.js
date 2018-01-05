@@ -1,6 +1,6 @@
 "use strict";
 
-const myLib = require(`../dist/myLib.common`);
+const myLib = require("../dist/myLib.common");
 
 describe("Main test", () => {
     it("Normal case", () => {
