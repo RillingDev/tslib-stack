@@ -26,6 +26,6 @@
             "always"
         ],
         "no-console": "warn",
-        "indent": "off"
+        "indent": "warn"
     }
 }
