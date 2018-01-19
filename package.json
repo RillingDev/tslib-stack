@@ -10,7 +10,8 @@
         "namespace": {
             "module": "myLib",
             "file": "myLib"
-        }
+        },
+        "externals": []
     },
     "scripts": {
         "start": "npm-run-all lint build test docs",
