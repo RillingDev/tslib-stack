@@ -1,6 +1,9 @@
 /**
  * Add two numbers
  *
+ * @function add
+ * @memberof Add
+ * @since 1.0.0
  * @param {number} a
  * @param {number} b
  * @returns {number}

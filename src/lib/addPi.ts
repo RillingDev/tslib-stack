@@ -2,8 +2,11 @@ import { PI } from "../constants";
 import add from "./add";
 
 /**
- * Add Pi to a number
+ * Adds pi to a number
  *
+ * @function addPi
+ * @memberof Add
+ * @since 1.0.0
  * @param {number} a
  * @returns {number}
  */
