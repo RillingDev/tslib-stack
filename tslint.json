@@ -1,16 +1,6 @@
 {
-    "extends": "eslint:recommended",
-    "plugins": [],
-    "env": {
-        "es6": true,
-        "node": true,
-        "browser": true,
-        "jasmine": true
-    },
-    "parserOptions": {
-        "sourceType": "module",
-        "ecmaVersion": 8
-    },
+    "defaultSeverity": "error",
+    "extends": ["tslint:recommended", "tslint-eslint-rules"],
     "rules": {
         "getter-return": 2,
         "no-prototype-builtins": 2,

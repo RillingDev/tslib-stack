@@ -1,6 +1,4 @@
-import {
-    PI
-} from "../constants";
+import { PI } from "../constants";
 import add from "./add";
 
 /**
