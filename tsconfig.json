@@ -5,9 +5,7 @@
         "newLine": "LF",
         "removeComments": false,
         "strict": true,
-        "noImplicitAny": false,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true
+        "noImplicitAny": false
     },
     "include": ["src/**/*"]
 }
