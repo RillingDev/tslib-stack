@@ -1,4 +1,5 @@
 import json from "rollup-plugin-json";
+import resolve from "rollup-plugin-node-resolve";
 import typescript from "rollup-plugin-typescript2";
 import { settings } from "../package.json";
 
@@ -17,6 +18,7 @@ export default {
     external: settings.external,
     plugins: [
         json(),
+        resolve(),
         typescript({
             cacheRoot: "./.cache/ts/main",
             tsconfigOverride: {
