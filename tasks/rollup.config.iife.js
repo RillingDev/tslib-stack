@@ -1,7 +1,6 @@
 import json from "rollup-plugin-json";
-import resolve from "rollup-plugin-node-resolve";
 import typescript from "rollup-plugin-typescript2";
-/* import babel from "rollup-plugin-babel"; */
+import babel from "rollup-plugin-babel";
 import { settings } from "../package.json";
 
 export default {
@@ -16,10 +15,9 @@ export default {
     ],
     plugins: [
         json(),
-        resolve(),
         typescript({
             cacheRoot: "./.cache/ts/iife"
         }),
-        /* babel() */
+        babel()
     ]
 };
