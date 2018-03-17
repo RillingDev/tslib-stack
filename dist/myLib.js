@@ -1,44 +1,44 @@
 var myLib = (function (exports) {
-'use strict';
+	'use strict';
 
-/**
- * Add two numbers
- *
- * @function add
- * @memberof Add
- * @since 1.0.0
- * @param {number} a
- * @param {number} b
- * @returns {number}
- */
-const add = (a, b) => a + b;
+	/**
+	 * Add two numbers
+	 *
+	 * @function add
+	 * @memberof Add
+	 * @since 1.0.0
+	 * @param {number} a
+	 * @param {number} b
+	 * @returns {number}
+	 */
+	const add = (a, b) => a + b;
 
-/**
- * Value of pi
- */
-const PI = Math.PI;
+	/**
+	 * Value of pi
+	 */
+	const PI = Math.PI;
 
-/**
- * Adds pi to a number
- *
- * @function addPi
- * @memberof Add
- * @since 1.0.0
- * @param {number} a
- * @returns {number}
- */
+	/**
+	 * Adds pi to a number
+	 *
+	 * @function addPi
+	 * @memberof Add
+	 * @since 1.0.0
+	 * @param {number} a
+	 * @returns {number}
+	 */
 
-const addPi = a => add(a, PI);
+	const addPi = a => add(a, PI);
 
-/**
- * Functions for addition
- * @namespace Add
- */
+	/**
+	 * Functions for addition
+	 * @namespace Add
+	 */
 
-exports.add = add;
-exports.addPi = addPi;
+	exports.add = add;
+	exports.addPi = addPi;
 
-return exports;
+	return exports;
 
 }({}));
 //# sourceMappingURL=myLib.js.map
