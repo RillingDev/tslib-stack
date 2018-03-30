@@ -1,8 +1,9 @@
 /**
- * Functions for addition
- * @namespace Add
+ * Person instances
+ * @namespace People
  */
-import add from "./lib/add";
-import addPi from "./lib/addPi";
+import betty from "./lib/betty";
+import { Person } from "./lib/person";
+import steve from "./lib/steve";
 
-export { add, addPi };
+export { Person, betty, steve };

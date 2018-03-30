@@ -1,7 +1,11 @@
-const myLib = require("../dist/myLib.common");
+const { betty, steve } = require("../dist/myLib.common");
 
 describe("Main test", () => {
-    it("Normal case", () => {
-        expect(myLib.add(1, 1)).toBe(2);
+    it("Betty", () => {
+        expect(betty.say("Hi!")).toBe("Betty(20): Hi!");
+    });
+
+    it("Steve", () => {
+        expect(steve.say()).toBe("Steve(19): Hello!");
     });
 });

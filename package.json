@@ -1,7 +1,8 @@
 {
     "name": "eslib-stack",
-    "version": "v9.0.0",
-    "description": "A small & flexible stack for building modern ES6 libraries.",
+    "version": "v10.0.0",
+    "description":
+        "A small & flexible stack for building modern ES6 libraries.",
     "main": "./dist/myLib.common.js",
     "module": "./dist/myLib.esm.js",
     "types": "./types/main.d.ts",
@@ -34,10 +35,7 @@
         "type": "git",
         "url": "git+https://github.com/FelixRilling/eslib-stack.git"
     },
-    "keywords": [
-        "stack",
-        "es"
-    ],
+    "keywords": ["stack", "es"],
     "author": "Felix Rilling",
     "license": "MIT",
     "bugs": {

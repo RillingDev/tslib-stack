@@ -1,5 +1,2 @@
-/**
- * Value of pi
- */
-declare const PI: number;
-export { PI };
+declare const MSG_DEFAULT = "Hello!";
+export { MSG_DEFAULT };

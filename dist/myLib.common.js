@@ -2,38 +2,55 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
+const MSG_DEFAULT = "Hello!";
+
 /**
- * Add two numbers
+ * Person class
  *
- * @function add
- * @memberof Add
- * @since 1.0.0
- * @param {number} a
- * @param {number} b
- * @returns {number}
+ * @class
+ * @name Person
+ * @memberof People
+ * @param {string} name
+ * @param {number} age
  */
-const add = (a, b) => a + b;
+class Person {
+    constructor(name, age = 0) {
+        this.species = "Human";
+        this.name = name;
+        this.age = age;
+    }
+    /**
+     * Returns formatted person string
+     *
+     * @param {string} [msg=MSG_DEFAULT]
+     * @returns {string}
+     */
+    say(msg = MSG_DEFAULT) {
+        return `${this.name}(${this.age}): ${msg}`;
+    }
+}
 
 /**
- * Value of pi
- */
-const PI = Math.PI;
-
-/**
- * Adds pi to a number
+ * Betty
  *
- * @function addPi
- * @memberof Add
- * @since 1.0.0
- * @param {number} a
- * @returns {number}
+ * @name betty
+ * @memberof People
  */
-const addPi = (a) => add(a, PI);
+const betty = new Person("Betty", 20);
 
 /**
- * Functions for addition
- * @namespace Add
+ * Steve
+ *
+ * @name steve
+ * @memberof People
+ */
+const steve = new Person("Steve", 19);
+
+/**
+ * Person instances
+ * @namespace People
  */
 
-exports.add = add;
-exports.addPi = addPi;
+exports.Person = Person;
+exports.betty = betty;
+exports.steve = steve;

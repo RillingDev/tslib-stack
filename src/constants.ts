@@ -1,6 +1,3 @@
-/**
- * Value of pi
- */
-const PI = Math.PI;
+const MSG_DEFAULT = "Hello!";
 
-export { PI };
+export { MSG_DEFAULT };

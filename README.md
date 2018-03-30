@@ -1,12 +1,32 @@
-# eslib-stack
+# ESLib Stack
 
-> A small & powerful stack for building modern JavaScript libraries.
+> A stack for modern TypeScript libraries
 
-Tools included:
+## Tools
 
-* TypeScript
-* TSLint + ESLint
-* JSDoc
-* Rollup
-* Babel
-* Uglify-ES
+*   Typescript
+*   Rollup
+*   TSLint
+*   Babel
+*   Uglify
+*   ESLint
+*   Jasmine
+
+## Structure
+
+*   `src/` Contains the main library code
+    *   `main.ts` Library entry point
+*   `specs/` Jasmine tests
+*   `dist/` Library output
+*   `types/` Type definitions generated together with output
+*   `docs/` Documentation generated from docs script
+
+## Scripts
+
+*   `watch` Starts the rollup watcher
+*   `build` Compiles the application to CJS and ES modules
+*   `dist` Compiles the application to all formats
+*   `docs` Generates JSDoc documentation
+*   `lint` Lints all source scripts and tests
+*   `fix` Auto-fixes issues in source scripts and tests
+*   `test` Runs tests
