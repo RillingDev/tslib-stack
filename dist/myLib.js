@@ -12,7 +12,9 @@ var myLib = (function (exports) {
      */
     class Person {
       constructor(name, age = 0) {
-        this.species = "Human";
+        this.species = "Human"
+        /* human */
+        ;
         this.name = name;
         this.age = age;
       }

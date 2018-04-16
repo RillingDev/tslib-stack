@@ -1,6 +1,7 @@
-import { ILifeform } from "./lifeform";
+import { ILifeform, knownSpecies } from "./lifeform";
 declare type sayFn = (msg?: string) => string;
 interface IPerson extends ILifeform {
+    species: knownSpecies.human;
     name: string;
     say: sayFn;
 }
@@ -14,7 +15,7 @@ interface IPerson extends ILifeform {
  * @param {number} age
  */
 declare class Person implements IPerson {
-    species: string;
+    species: knownSpecies.human;
     name: string;
     age: number;
     constructor(name: string, age?: number);

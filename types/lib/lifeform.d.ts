@@ -1,5 +1,11 @@
+declare const enum knownSpecies {
+    cell = "Cell",
+    frog = "Frog",
+    fish = "Fish",
+    human = "Human",
+}
 interface ILifeform {
-    species: string;
+    species: knownSpecies;
     age: number;
 }
-export { ILifeform };
+export { knownSpecies, ILifeform };
