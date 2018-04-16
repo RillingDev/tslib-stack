@@ -1,5 +1,11 @@
-import { MSG_DEFAULT } from "../constants";
-import { IPerson } from "../interfaces";
+import { ILifeform } from "./lifeform";
+
+type sayFn = (msg?: string) => string;
+
+interface IPerson extends ILifeform {
+    name: string;
+    say: sayFn;
+}
 
 /**
  * Person class
@@ -11,10 +17,10 @@ import { IPerson } from "../interfaces";
  * @param {number} age
  */
 class Person implements IPerson {
-    public species = "Human";
-    public name;
-    public age;
-    constructor(name, age = 0) {
+    public species: string = "Human";
+    public name: string;
+    public age: number;
+    constructor(name: string, age: number = 0) {
         this.name = name;
         this.age = age;
     }
@@ -24,9 +30,9 @@ class Person implements IPerson {
      * @param {string} [msg=MSG_DEFAULT]
      * @returns {string}
      */
-    public say(msg = MSG_DEFAULT) {
+    public say(msg: string = "Hello!"): string {
         return `${this.name}(${this.age}): ${msg}`;
     }
 }
 
-export { Person };
+export { Person, IPerson, sayFn };

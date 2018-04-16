@@ -6,4 +6,4 @@ import { Person } from "./person";
  * @memberof People
  */
 declare const steve: Person;
-export default steve;
+export { steve };

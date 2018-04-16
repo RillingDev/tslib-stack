@@ -1,4 +1,9 @@
-import { IPerson } from "../interfaces";
+import { ILifeform } from "./lifeform";
+declare type sayFn = (msg?: string) => string;
+interface IPerson extends ILifeform {
+    name: string;
+    say: sayFn;
+}
 /**
  * Person class
  *
@@ -10,9 +15,9 @@ import { IPerson } from "../interfaces";
  */
 declare class Person implements IPerson {
     species: string;
-    name: any;
-    age: any;
-    constructor(name: any, age?: number);
+    name: string;
+    age: number;
+    constructor(name: string, age?: number);
     /**
      * Returns formatted person string
      *
@@ -21,4 +26,4 @@ declare class Person implements IPerson {
      */
     say(msg?: string): string;
 }
-export { Person };
+export { Person, IPerson, sayFn };

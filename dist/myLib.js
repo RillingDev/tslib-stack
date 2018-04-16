@@ -1,8 +1,6 @@
 var myLib = (function (exports) {
     'use strict';
 
-    const MSG_DEFAULT = "Hello!";
-
     /**
      * Person class
      *
@@ -12,7 +10,6 @@ var myLib = (function (exports) {
      * @param {string} name
      * @param {number} age
      */
-
     class Person {
       constructor(name, age = 0) {
         this.species = "Human";
@@ -27,7 +24,7 @@ var myLib = (function (exports) {
        */
 
 
-      say(msg = MSG_DEFAULT) {
+      say(msg = "Hello!") {
         return `${this.name}(${this.age}): ${msg}`;
       }
 

@@ -1,5 +1,3 @@
-const MSG_DEFAULT = "Hello!";
-
 /**
  * Person class
  *
@@ -21,7 +19,7 @@ class Person {
      * @param {string} [msg=MSG_DEFAULT]
      * @returns {string}
      */
-    say(msg = MSG_DEFAULT) {
+    say(msg = "Hello!") {
         return `${this.name}(${this.age}): ${msg}`;
     }
 }

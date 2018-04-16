@@ -6,6 +6,6 @@ import { Person } from "./person";
  * @name betty
  * @memberof People
  */
-const betty = new Person("Betty", 20);
+const betty: Person = new Person("Betty", 20);
 
-export default betty;
+export { betty };
