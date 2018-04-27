@@ -46,9 +46,9 @@
     "homepage": "https://github.com/FelixRilling/eslib-stack#readme",
     "dependencies": {},
     "devDependencies": {
-        "@babel/core": "^7.0.0-beta.44",
-        "@babel/plugin-external-helpers": "^7.0.0-beta.44",
-        "@babel/preset-env": "^7.0.0-beta.44",
+        "@babel/core": "^7.0.0-beta.46",
+        "@babel/plugin-external-helpers": "^7.0.0-beta.46",
+        "@babel/preset-env": "^7.0.0-beta.46",
         "docdash": "git+https://github.com/clenemt/docdash.git",
         "eslint": "^4.19.1",
         "jasmine": "^3.1.0",
