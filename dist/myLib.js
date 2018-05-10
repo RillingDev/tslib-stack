@@ -7,7 +7,6 @@ var myLib = (function (exports) {
      * @public
      * @class
      * @name Person
-     * @memberof People
      * @param {string} name
      * @param {number} age
      */
@@ -16,14 +15,14 @@ var myLib = (function (exports) {
         this.species = "Human"
         /* human */
         ;
-        this.name = name;
         this.age = age;
+        this.name = name;
       }
       /**
        * Returns formatted person string
        *
        * @public
-       * @param {string} [msg=MSG_DEFAULT]
+       * @param {string} [msg="Hello!"]
        * @returns {string}
        */
 
@@ -56,6 +55,8 @@ var myLib = (function (exports) {
 
     /**
      * Person instances
+     *
+     * @public
      * @namespace People
      */
 

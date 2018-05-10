@@ -8,21 +8,20 @@ Object.defineProperty(exports, '__esModule', { value: true });
  * @public
  * @class
  * @name Person
- * @memberof People
  * @param {string} name
  * @param {number} age
  */
 class Person {
     constructor(name, age = 0) {
         this.species = "Human" /* human */;
-        this.name = name;
         this.age = age;
+        this.name = name;
     }
     /**
      * Returns formatted person string
      *
      * @public
-     * @param {string} [msg=MSG_DEFAULT]
+     * @param {string} [msg="Hello!"]
      * @returns {string}
      */
     say(msg = "Hello!") {
@@ -50,6 +49,8 @@ const steve = new Person("Steve", 19);
 
 /**
  * Person instances
+ *
+ * @public
  * @namespace People
  */
 

@@ -1,5 +1,4 @@
-import { Person } from "./person";
-
+import { Person } from "../person";
 /**
  * Steve
  *
@@ -7,6 +6,5 @@ import { Person } from "./person";
  * @name steve
  * @memberof People
  */
-const steve: Person = new Person("Steve", 19);
-
+declare const steve: Person;
 export { steve };
