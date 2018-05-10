@@ -42,6 +42,7 @@
         "url": "https://github.com/FelixRilling/eslib-stack/issues"
     },
     "homepage": "https://github.com/FelixRilling/eslib-stack#readme",
+    "browserslist": ["last 2 Chrome versions", "last 2 Firefox versions"],
     "dependencies": {},
     "devDependencies": {
         "@babel/core": "^7.0.0-beta.46",

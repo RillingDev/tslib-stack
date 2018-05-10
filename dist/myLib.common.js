@@ -5,6 +5,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 /**
  * Person class
  *
+ * @public
  * @class
  * @name Person
  * @memberof People
@@ -20,6 +21,7 @@ class Person {
     /**
      * Returns formatted person string
      *
+     * @public
      * @param {string} [msg=MSG_DEFAULT]
      * @returns {string}
      */
@@ -31,6 +33,7 @@ class Person {
 /**
  * Betty
  *
+ * @public
  * @name betty
  * @memberof People
  */
@@ -39,6 +42,7 @@ const betty = new Person("Betty", 20);
 /**
  * Steve
  *
+ * @public
  * @name steve
  * @memberof People
  */

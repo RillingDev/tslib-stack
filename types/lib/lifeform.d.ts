@@ -5,7 +5,7 @@ declare const enum knownSpecies {
     human = "Human",
 }
 interface ILifeform {
-    species: knownSpecies;
-    age: number;
+    readonly species: knownSpecies;
+    readonly age: number;
 }
 export { knownSpecies, ILifeform };

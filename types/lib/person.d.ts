@@ -8,6 +8,7 @@ interface IPerson extends ILifeform {
 /**
  * Person class
  *
+ * @public
  * @class
  * @name Person
  * @memberof People
@@ -22,6 +23,7 @@ declare class Person implements IPerson {
     /**
      * Returns formatted person string
      *
+     * @public
      * @param {string} [msg=MSG_DEFAULT]
      * @returns {string}
      */

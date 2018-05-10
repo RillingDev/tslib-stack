@@ -4,6 +4,7 @@ var myLib = (function (exports) {
     /**
      * Person class
      *
+     * @public
      * @class
      * @name Person
      * @memberof People
@@ -21,6 +22,7 @@ var myLib = (function (exports) {
       /**
        * Returns formatted person string
        *
+       * @public
        * @param {string} [msg=MSG_DEFAULT]
        * @returns {string}
        */
@@ -35,6 +37,7 @@ var myLib = (function (exports) {
     /**
      * Betty
      *
+     * @public
      * @name betty
      * @memberof People
      */
@@ -44,6 +47,7 @@ var myLib = (function (exports) {
     /**
      * Steve
      *
+     * @public
      * @name steve
      * @memberof People
      */
