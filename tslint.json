@@ -2,6 +2,8 @@
     "defaultSeverity": "warning",
     "extends": ["tslint:recommended"],
     "rules": {
+        "arrow-parens": false,
+        "trailing-comma": false,
         "no-angle-bracket-type-assertion": false,
         "curly": false,
         "object-literal-sort-keys": false,
