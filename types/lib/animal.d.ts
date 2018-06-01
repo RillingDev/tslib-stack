@@ -5,7 +5,7 @@ declare const enum knownAnimalSpecies {
     frog = "Frog",
     fish = "Fish",
     cat = "Cat",
-    human = "Human",
+    human = "Human"
 }
 /**
  * Animal Interface

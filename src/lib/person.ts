@@ -12,6 +12,7 @@ interface IPerson extends IAnimal {
     readonly species: knownAnimalSpecies.human;
     readonly say: sayFn;
 }
+
 /**
  * Person class
  *
