@@ -1,6 +1,6 @@
 {
     "name": "eslib-stack",
-    "version": "v10.0.0",
+    "version": "v11.0.0",
     "description": "A small & flexible stack for building modern ES6 libraries.",
     "main": "./dist/myLib.common.js",
     "module": "./dist/myLib.esm.js",
@@ -48,7 +48,9 @@
         "last 2 Chrome versions",
         "last 2 Firefox versions"
     ],
-    "dependencies": {},
+    "dependencies": {
+        "lightdash": "^8.0.0"
+    },
     "devDependencies": {
         "@babel/core": "^7.0.0-beta.51",
         "@babel/plugin-external-helpers": "^7.0.0-beta.51",

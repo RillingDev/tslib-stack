@@ -1,5 +1,2 @@
 {
-    "editor.formatOnSave": true,
-    "tslint.autoFixOnSave": true,
-    "eslint.autoFixOnSave": true
 }
