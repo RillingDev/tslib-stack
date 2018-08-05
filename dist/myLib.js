@@ -11,26 +11,21 @@ var myLib = (function (exports) {
      * @param {number} age
      */
     class Person {
-      constructor(name, age = 0) {
-        this.species = "Human"
-        /* human */
-        ;
-        this.age = age;
-        this.name = name;
-      }
-      /**
-       * Returns formatted person string
-       *
-       * @public
-       * @param {string} [msg="Hello!"]
-       * @returns {string}
-       */
-
-
-      say(msg = "Hello!") {
-        return `${this.name}(${this.age}): ${msg}`;
-      }
-
+        constructor(name, age = 0) {
+            this.species = "Human" /* human */;
+            this.age = age;
+            this.name = name;
+        }
+        /**
+         * Returns formatted person string
+         *
+         * @public
+         * @param {string} [msg="Hello!"]
+         * @returns {string}
+         */
+        say(msg = "Hello!") {
+            return `${this.name}(${this.age}): ${msg}`;
+        }
     }
 
     /**
@@ -40,7 +35,6 @@ var myLib = (function (exports) {
      * @name betty
      * @memberof People
      */
-
     const betty = new Person("Betty", 20);
 
     /**
@@ -50,7 +44,6 @@ var myLib = (function (exports) {
      * @name steve
      * @memberof People
      */
-
     const steve = new Person("Steve", 19);
 
     /**
