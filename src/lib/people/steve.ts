@@ -1,4 +1,4 @@
-import { Person } from "../person";
+import { Person } from "../Person";
 
 /**
  * Steve
@@ -7,6 +7,6 @@ import { Person } from "../person";
  * @name steve
  * @memberof People
  */
-const steve: Person = new Person("Steve", 19);
+const steve = new Person("Steve", 19);
 
 export { steve };

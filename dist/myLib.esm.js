@@ -9,7 +9,7 @@
  */
 class Person {
     constructor(name, age = 0) {
-        this.species = "Human" /* human */;
+        this.species = "Human" /* HUMAN */;
         this.age = age;
         this.name = name;
     }

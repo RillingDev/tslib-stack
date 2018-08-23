@@ -1,17 +1,5 @@
-import { IAnimal, knownAnimalSpecies } from "./animal";
-
-/**
- * IPerson say method type
- */
-type sayFn = (msg?: string) => string;
-
-/**
- * IPerson Interface
- */
-interface IPerson extends IAnimal {
-    readonly species: knownAnimalSpecies.human;
-    readonly say: sayFn;
-}
+import { KnownAnimalSpecies } from "./KnownAnimalSpecies";
+import { IPerson } from "./IPerson";
 
 /**
  * Person class
@@ -23,11 +11,11 @@ interface IPerson extends IAnimal {
  * @param {number} age
  */
 class Person implements IPerson {
-    public species: knownAnimalSpecies.human;
-    public age: number;
-    private name: string;
+    public readonly species: KnownAnimalSpecies.HUMAN;
+    public readonly age: number;
+    private readonly name: string;
     constructor(name: string, age: number = 0) {
-        this.species = knownAnimalSpecies.human;
+        this.species = KnownAnimalSpecies.HUMAN;
         this.age = age;
         this.name = name;
     }
@@ -43,4 +31,4 @@ class Person implements IPerson {
     }
 }
 
-export { Person, IPerson, sayFn };
+export { Person };
