@@ -1,5 +1,5 @@
-import { KnownAnimalSpecies } from "./KnownAnimalSpecies";
-import { IPerson } from "./IPerson";
+import { AnimalSpecies } from "./AnimalSpecies";
+import { IAnimal } from "./IAnimal";
 
 /**
  * Person class
@@ -10,15 +10,17 @@ import { IPerson } from "./IPerson";
  * @param {string} name
  * @param {number} age
  */
-class Person implements IPerson {
-    public readonly species: KnownAnimalSpecies.HUMAN;
-    public readonly age: number;
+class Person implements IAnimal {
+    readonly species: AnimalSpecies.HUMAN;
+    readonly age: number;
     private readonly name: string;
+
     constructor(name: string, age: number = 0) {
-        this.species = KnownAnimalSpecies.HUMAN;
+        this.species = AnimalSpecies.HUMAN;
         this.age = age;
         this.name = name;
     }
+
     /**
      * Returns formatted person string
      *
