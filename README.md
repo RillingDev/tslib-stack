@@ -5,20 +5,20 @@
 ## Tools
 
 -   Typescript
--   Rollup
 -   TSLint
--   Uglify
--   ESLint
 -   Jasmine
+-   Rollup
+-   Uglify
 
 ## Structure
 
--   `src/` Contains the main library code
-    -   `main.ts` Library entry point
--   `dist/` Library output
--   `specs/` Jasmine tests
--   `types/` Type definitions generated together with output
--   `docs/` Documentation generated from docs script
+-   `src/` Contains the main library code.
+    -   `main.ts` Library entry point.
+-   `specs/` Jasmine tests.
+        `main.ts` Test entry point.
+-   `dist/` Library output.
+-   `types/` Type definitions generated together with output.
+-   `docs/` Documentation generated from docs script.
 
 ## Scripts
 
@@ -28,4 +28,4 @@
 -   `docs` Generates JSDoc documentation
 -   `lint` Lints all source scripts and tests
 -   `fix` Auto-fixes issues in source scripts and tests
--   `test` Runs tests
+-   `test` Compiles and runs tests

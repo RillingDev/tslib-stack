@@ -7,5 +7,4 @@ declare const enum AnimalSpecies {
     RUBBER_DUCK = "Rubber Duck",
     CAT = "Cat"
 }
-
 export { AnimalSpecies };

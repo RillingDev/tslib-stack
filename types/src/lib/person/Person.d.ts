@@ -14,9 +14,7 @@ declare class Person implements IAnimal {
     readonly species: AnimalSpecies.HUMAN;
     readonly age: number;
     private readonly name;
-
     constructor(name: string, age?: number);
-
     /**
      * Returns formatted person string
      *
@@ -26,5 +24,4 @@ declare class Person implements IAnimal {
      */
     say(msg?: string): string;
 }
-
 export { Person };

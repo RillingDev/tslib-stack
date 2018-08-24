@@ -1,1 +1,2 @@
-declare const betty: any, steve: any;
+declare const personTest: () => void;
+export { personTest };
