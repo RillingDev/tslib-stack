@@ -1,4 +1,4 @@
-# ESLib Stack
+# TSLib Stack
 
 > A stack for modern TypeScript libraries
 
