@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * Person class
@@ -15,7 +15,6 @@ class Person {
         this.age = age;
         this.name = name;
     }
-
     /**
      * Returns formatted person string
      *
@@ -53,24 +52,17 @@ const steve = new Person("Steve", 19);
  * @namespace People
  */
 
-const mainTest = () => {
-    describe("Main test", () => {
-        it("Person export", () => {
-            expect(Person).toBeDefined();
-        });
+describe("Main test", () => {
+    it("Person export", () => {
+        expect(Person).toBeDefined();
     });
-};
+});
 
-const personTest = () => {
-    describe("Person test", () => {
-        it("Betty", () => {
-            expect(betty.say("Hi!")).toBe("Betty(20): Hi!");
-        });
-        it("Steve", () => {
-            expect(steve.say()).toBe("Steve(19): Hello!");
-        });
+describe("Person test", () => {
+    it("Betty", () => {
+        expect(betty.say("Hi!")).toBe("Betty(20): Hi!");
     });
-};
-
-mainTest();
-personTest();
+    it("Steve", () => {
+        expect(steve.say()).toBe("Steve(19): Hello!");
+    });
+});
