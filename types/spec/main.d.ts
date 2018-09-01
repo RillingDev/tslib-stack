@@ -1,1 +1,2 @@
-export {};
+import "./human.spec";
+import "./people.spec";

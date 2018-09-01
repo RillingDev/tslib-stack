@@ -1,11 +1,11 @@
-import { betty } from "./lib/person/people/betty";
-import { steve } from "./lib/person/people/steve";
-import { Person } from "./lib/person/Person";
+import { Human } from "./human/Human";
+import { betty } from "./people/betty";
+import { steve } from "./people/steve";
 
-export { Person, betty, steve };
+export { Human, betty, steve };
 
 /**
- * Person instances
+ * Human instances
  *
  * @public
  * @namespace People

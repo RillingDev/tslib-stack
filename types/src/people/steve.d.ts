@@ -1,5 +1,4 @@
-import { Person } from "../Person";
-
+import { Human } from "../human/Human";
 /**
  * Steve
  *
@@ -7,5 +6,5 @@ import { Person } from "../Person";
  * @name steve
  * @memberof People
  */
-declare const steve: Person;
+declare const steve: Human;
 export { steve };

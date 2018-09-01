@@ -1,16 +1,15 @@
 import { AnimalSpecies } from "./AnimalSpecies";
 import { IAnimal } from "./IAnimal";
-
 /**
- * Person class
+ * Human class
  *
  * @public
  * @class
- * @name Person
+ * @name Human
  * @param {string} name
  * @param {number} age
  */
-declare class Person implements IAnimal {
+declare class Human implements IAnimal {
     readonly species: AnimalSpecies.HUMAN;
     readonly age: number;
     private readonly name;
@@ -24,4 +23,4 @@ declare class Person implements IAnimal {
      */
     say(msg?: string): string;
 }
-export { Person };
+export { Human };

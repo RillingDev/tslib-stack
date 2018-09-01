@@ -1,6 +1,6 @@
 import { betty, steve } from "../src/main";
 
-describe("Person test", () => {
+describe("Human test", () => {
     it("Betty", () => {
         expect(betty.say("Hi!")).toBe("Betty(20): Hi!");
     });

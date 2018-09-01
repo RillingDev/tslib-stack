@@ -3,15 +3,15 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 /**
- * Person class
+ * Human class
  *
  * @public
  * @class
- * @name Person
+ * @name Human
  * @param {string} name
  * @param {number} age
  */
-class Person {
+class Human {
     constructor(name, age = 0) {
         this.species = "Human" /* HUMAN */;
         this.age = age;
@@ -36,7 +36,7 @@ class Person {
  * @name betty
  * @memberof People
  */
-const betty = new Person("Betty", 20);
+const betty = new Human("Betty", 20);
 
 /**
  * Steve
@@ -45,15 +45,15 @@ const betty = new Person("Betty", 20);
  * @name steve
  * @memberof People
  */
-const steve = new Person("Steve", 19);
+const steve = new Human("Steve", 19);
 
 /**
- * Person instances
+ * Human instances
  *
  * @public
  * @namespace People
  */
 
-exports.Person = Person;
+exports.Human = Human;
 exports.betty = betty;
 exports.steve = steve;

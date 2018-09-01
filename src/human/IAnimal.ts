@@ -1,6 +1,6 @@
 import { AnimalSpecies } from "./AnimalSpecies";
 
-/**
+/*
  * Animal Interface
  */
 interface IAnimal {
