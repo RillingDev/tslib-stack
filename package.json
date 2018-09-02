@@ -18,7 +18,7 @@
         "build:iife": "rollup -c ./tasks/rollup.config.iife.js",
         "build:iife-min": "rollup -c ./tasks/rollup.config.iife-min.js",
         "build:test": "rollup -c ./tasks/rollup.config.test.js",
-        "build:declarations": "tsc --emitDeclarationOnly -d --declarationDir ./types",
+        "build:declarations": "tsc --build ./tasks/tsconfig.declarations.json",
         "watch": "rollup -c ./tasks/rollup.config.js --watch",
         "dist": "npm-run-all --parallel build build:iife build:iife-min build:declarations",
         "lint": "npm-run-all --parallel lint:ts",

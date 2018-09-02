@@ -15,7 +15,7 @@
 -   `src/` Contains the main library code.
     -   `main.ts` Library entry point.
 -   `specs/` Jasmine tests.
-        `main.ts` Test entry point.
+    -   `main.ts` Test entry point.
 -   `dist/` Library output.
 -   `types/` Type definitions generated together with output.
 -   `docs/` Documentation generated from docs script.
