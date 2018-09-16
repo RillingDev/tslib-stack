@@ -1,4 +1,4 @@
-/*
+/**
  * Allowed IAnimal species
  */
 const enum AnimalSpecies {

@@ -1,3 +1,6 @@
+/**
+ * Allowed IAnimal species
+ */
 declare const enum AnimalSpecies {
     HUMAN = "Human",
     BUG = "Bug",

@@ -1,24 +1,22 @@
 /**
  * Human class
- *
- * @public
- * @class
- * @name Human
- * @param {string} name
- * @param {number} age
  */
 class Human {
+    /**
+     * Creates a {@link Human}
+     *
+     * @param name Name of the human
+     * @param age age of the Human.
+     */
     constructor(name, age = 0) {
         this.species = "Human" /* HUMAN */;
         this.age = age;
         this.name = name;
     }
     /**
-     * Returns formatted person string
+     * Says something.
      *
-     * @public
-     * @param {string} [msg="Hello!"]
-     * @returns {string}
+     * @param msg Message to say.
      */
     say(msg = "Hello!") {
         return `${this.name}(${this.age}): ${msg}`;
@@ -26,28 +24,13 @@ class Human {
 }
 
 /**
- * Betty
- *
- * @public
- * @name betty
- * @memberof People
+ * Betty, a {@link Human}.
  */
 const betty = new Human("Betty", 20);
 
 /**
- * Steve
- *
- * @public
- * @name steve
- * @memberof People
+ * Steve, a {@link Human}.
  */
 const steve = new Human("Steve", 19);
-
-/**
- * Human instances
- *
- * @public
- * @namespace People
- */
 
 export { Human, betty, steve };

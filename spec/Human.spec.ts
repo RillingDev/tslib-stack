@@ -1,7 +1,7 @@
 import { Human } from "../src/main";
 
-describe("Main test", () => {
-    it("Human export", () => {
+describe("Human", () => {
+    it("is defined", () => {
         expect(Human).toBeDefined();
     });
 });

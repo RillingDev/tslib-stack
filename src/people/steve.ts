@@ -1,11 +1,7 @@
 import { Human } from "../human/Human";
 
 /**
- * Steve
- *
- * @public
- * @name steve
- * @memberof People
+ * Steve, a {@link Human}.
  */
 const steve = new Human("Steve", 19);
 
