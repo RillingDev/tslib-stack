@@ -2,11 +2,18 @@
 
 > A stack for modern TypeScript libraries
 
+## Introduction
+
+A stack with everything you need when writing modern, maintainable TypeScript libraries and tools.
+
+**[Example Docs](https://felixrilling.github.io/tslib-stack/)**
+
 ## Tools
 
 -   Typescript
 -   TSLint
 -   Jasmine
+-   JSDoc
 -   Rollup
 -   Uglify
 
