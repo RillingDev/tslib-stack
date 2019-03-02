@@ -1,5 +1,5 @@
 /**
- * Allowed IAnimal species
+ * Available {@link IAnimal} species.
  */
 declare const enum AnimalSpecies {
     HUMAN = "Human",

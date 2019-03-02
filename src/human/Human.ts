@@ -2,18 +2,18 @@ import { AnimalSpecies } from "./AnimalSpecies";
 import { IAnimal } from "./IAnimal";
 
 /**
- * Human class
+ * Human implementation of {@link IAnimal}.
  */
 class Human implements IAnimal {
-    readonly species: AnimalSpecies.HUMAN;
-    readonly age: number;
+    public readonly species: AnimalSpecies.HUMAN;
+    public readonly age: number;
     private readonly name: string;
 
     /**
-     * Creates a {@link Human}
+     * Creates a new {@link Human}
      *
      * @param name Name of the human
-     * @param age age of the Human.
+     * @param age Age of the human.
      */
     constructor(name: string, age: number = 0) {
         this.species = AnimalSpecies.HUMAN;
@@ -22,9 +22,10 @@ class Human implements IAnimal {
     }
 
     /**
-     * Says something.
+     * Creates a string for this human saying something.
      *
-     * @param msg Message to say.
+     * @param msg Message to say, defaults to "Hello!".
+     * @returns String this human is saying.
      */
     public say(msg: string = "Hello!"): string {
         return `${this.name}(${this.age}): ${msg}`;

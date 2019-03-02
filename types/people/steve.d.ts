@@ -1,6 +1,6 @@
 import { Human } from "../human/Human";
 /**
- * Steve, a {@link Human}.
+ * A {@link Human} called Steve.
  */
 declare const steve: Human;
 export { steve };

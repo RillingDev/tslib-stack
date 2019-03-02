@@ -1,7 +1,7 @@
 import { AnimalSpecies } from "./AnimalSpecies";
 
 /**
- * Animal Interface
+ * Base interface for animal implementations.
  */
 interface IAnimal {
     readonly species: AnimalSpecies;
