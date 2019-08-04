@@ -6,12 +6,15 @@
     "module": "./dist/myLib.esm.js",
     "types": "./dist/types/main.d.ts",
     "settings": {
-        "browser": true,
         "namespace": {
             "module": "myLib",
             "file": "myLib"
         },
-        "external": []
+        "external": [],
+        "browser": {
+            "enabled": true,
+            "globals": {}
+        }
     },
     "scripts": {
         "start": "npm-run-all lint build test docs",

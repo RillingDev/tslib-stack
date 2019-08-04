@@ -14,13 +14,14 @@ const OUTPUT_BROWSER = {
     format: "iife",
     name: settings.namespace.module,
     file: `./dist/${settings.namespace.file}.js`,
-    sourcemap: true
+    sourcemap: true,
+    globals: settings.browser.globals
 };
 
 const getOutputs = () => {
     const output = [OUTPUT_ESM, OUTPUT_CJS];
 
-    if (settings.browser) {
+    if (settings.browser.enabled) {
         output.push(OUTPUT_BROWSER);
     }
     return output;

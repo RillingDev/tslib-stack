@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * Human implementation of {@link IAnimal}.
@@ -15,7 +15,6 @@ class Human {
         this.age = age;
         this.name = name;
     }
-
     /**
      * Creates a string for this human saying something.
      *
