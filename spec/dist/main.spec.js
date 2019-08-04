@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Human implementation of {@link IAnimal}.
  */
@@ -13,6 +15,7 @@ class Human {
         this.age = age;
         this.name = name;
     }
+
     /**
      * Creates a string for this human saying something.
      *
@@ -34,4 +37,17 @@ const betty = new Human("Betty", 20);
  */
 const steve = new Human("Steve", 19);
 
-export { Human, betty, steve };
+describe("Human", () => {
+    it("is defined", () => {
+        expect(Human).toBeDefined();
+    });
+});
+
+describe("People", () => {
+    it("Betty", () => {
+        expect(betty.say("Hi!")).toBe("Betty(20): Hi!");
+    });
+    it("Steve", () => {
+        expect(steve.say()).toBe("Steve(19): Hello!");
+    });
+});
