@@ -23,16 +23,15 @@ A stack with everything you need when writing modern, maintainable TypeScript li
     -   `main.ts` Library entry point.
 -   `specs/` Jasmine tests.
     -   `main.ts` Test entry point.
--   `dist/` Library output.
--   `types/` Type definitions generated together with output.
+-   `dist/` Bundling output.
 -   `docs/` Documentation generated from docs script.
 
 ## Scripts
 
 -   `watch` Starts the rollup watcher
--   `build` Compiles the application to CJS and ES modules
--   `dist` Compiles the application to all formats
+-   `dist` Compiles the library, runs tests and builds docs.
+-   `build` Compiles the library.
+-   `test` Compiles and runs tests
 -   `docs` Generates JSDoc documentation
 -   `lint` Lints all source scripts and tests
 -   `fix` Auto-fixes issues in source scripts and tests
--   `test` Compiles and runs tests
