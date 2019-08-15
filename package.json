@@ -1,26 +1,27 @@
 {
     "name": "tslib-stack",
-    "version": "v12.0.0",
+    "version": "v13.0.0",
     "description": "A small & flexible stack for building modern TypeScript libraries.",
     "main": "./dist/myLib.common.js",
     "module": "./dist/myLib.esm.js",
-    "types": "./types/main.d.ts",
+    "types": "./dist/types/main.d.ts",
     "settings": {
         "namespace": {
             "module": "myLib",
             "file": "myLib"
         },
-        "external": []
+        "external": [],
+        "browser": {
+            "enabled": true,
+            "globals": {}
+        }
     },
     "scripts": {
         "start": "npm-run-all lint build test docs",
         "build": "rollup -c ./tasks/rollup.config.js",
-        "build:iife": "rollup -c ./tasks/rollup.config.iife.js",
-        "build:iife-min": "rollup -c ./tasks/rollup.config.iife-min.js",
         "build:test": "rollup -c ./tasks/rollup.config.test.js",
-        "build:declarations": "tsc --build ./tasks/tsconfig.declarations.json",
         "watch": "rollup -c ./tasks/rollup.config.js --watch",
-        "dist": "npm-run-all --parallel build build:iife build:iife-min build:declarations",
+        "dist": "npm-run-all build test docs",
         "lint": "eslint ./src/**/*.ts ./spec/**/*.ts",
         "fix": "eslint ./src/**/*.ts ./spec/**/*.ts --fix",
         "test": "npm-run-all build:test test:jasmine",
@@ -55,9 +56,8 @@
         "prettier": "^1.18.2",
         "rollup": "^1.18.0",
         "rollup-plugin-node-resolve": "^5.2.0",
-        "rollup-plugin-terser": "^5.1.1",
-        "rollup-plugin-typescript2": "^0.22.1",
-        "terser": "^4.1.3",
+        "rollup-plugin-typescript2": "^0.22.0",
+        "tslint": "^5.18.0",
         "typescript": "^3.5.3"
     }
 }
