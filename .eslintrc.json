@@ -8,6 +8,7 @@
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "prettier",
         "prettier/@typescript-eslint"
     ],
@@ -38,6 +39,33 @@
             "error",
             "always"
         ],
-        "prettier/prettier": "warn"
+        "capitalized-comments": "warn",
+        "curly": [
+            "warn",
+            "all"
+        ],
+        "no-extra-parens": "warn",
+        "prettier/prettier": "warn",
+        "no-template-curly-in-string": "warn",
+        "array-callback-return": "warn",
+        "consistent-return": "warn",
+        "no-else-return": "warn",
+        "no-implicit-coercion": "warn",
+        "no-shadow": "error",
+        "no-undef-init": "warn",
+        "@typescript-eslint/explicit-member-accessibility": "warn",
+        "@typescript-eslint/interface-name-prefix": [
+            "warn",
+            {
+                "prefixWithI": "never"
+            }
+        ],
+        "@typescript-eslint/no-floating-promises": "error",
+        "@typescript-eslint/explicit-function-return-type": [
+            "warn",
+            {
+                "allowExpressions": true
+            }
+        ]
     }
 }

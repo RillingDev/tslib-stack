@@ -17,13 +17,13 @@
         }
     },
     "scripts": {
-        "start": "npm-run-all lint build test docs",
+        "start": "npm run dist",
         "build": "rollup -c ./tasks/rollup.config.js",
         "build:test": "rollup -c ./tasks/rollup.config.test.js",
         "watch": "rollup -c ./tasks/rollup.config.js --watch",
-        "dist": "npm-run-all build test docs",
-        "lint": "eslint ./src/**/*.ts ./spec/**/*.ts",
-        "fix": "eslint ./src/**/*.ts ./spec/**/*.ts --fix",
+        "dist": "npm-run-all lint test build docs",
+        "lint": "eslint ./src/**/*.ts ./spec/**/*.ts --ext .js,.ts",
+        "fix": "eslint ./src/**/*.ts ./spec/**/*.ts --ext .js,.ts --fix",
         "test": "npm-run-all build:test test:jasmine",
         "test:jasmine": "jasmine",
         "docs": "jsdoc -c jsdoc.json"
@@ -44,8 +44,8 @@
     "homepage": "https://github.com/FelixRilling/tslib-stack#readme",
     "devDependencies": {
         "@types/jasmine": "^3.3.16",
-        "@typescript-eslint/eslint-plugin": "^1.13.0",
-        "@typescript-eslint/parser": "^1.13.0",
+        "@typescript-eslint/eslint-plugin": "^2.0.0",
+        "@typescript-eslint/parser": "^2.0.0",
         "docdash": "^1.1.1",
         "eslint": "^6.1.0",
         "eslint-config-prettier": "^6.0.0",
