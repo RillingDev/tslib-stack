@@ -1,7 +1,7 @@
 /**
- * Available {@link IAnimal} species.
+ * Available {@link AnimalSpecies} species.
  */
-declare const enum AnimalSpecies {
+declare enum AnimalSpecies {
     HUMAN = "Human",
     BUG = "Bug",
     RUBBER_DUCK = "Rubber Duck",

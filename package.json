@@ -2,25 +2,21 @@
     "name": "tslib-stack",
     "version": "v13.0.0",
     "description": "A small & flexible stack for building modern TypeScript libraries.",
-    "main": "./dist/myLib.common.js",
-    "module": "./dist/myLib.esm.js",
+    "main": "./dist/cjs/main.js",
+    "module": "./dist/esm/main.js",
     "types": "./dist/types/main.d.ts",
-    "settings": {
-        "namespace": {
-            "module": "myLib",
-            "file": "myLib"
-        },
+    "rollupOptions": {
+        "moduleName": "myLib",
+        "outputName": "myLib",
         "external": [],
-        "browser": {
-            "enabled": true,
-            "globals": {}
-        }
+        "globals": {}
     },
     "scripts": {
         "start": "npm run dist",
-        "build": "rollup -c ./tasks/rollup.config.js",
-        "build:test": "rollup -c ./tasks/rollup.config.test.js",
-        "watch": "rollup -c ./tasks/rollup.config.js --watch",
+        "build": "npm-run-all -p build:esm build:misc",
+        "build:esm": "tsc --build tsconfig.json",
+        "build:misc": "tsc --build tsconfig.cjs.json && rollup -c rollup.config.iife.js",
+        "build:test": "tsc --build tsconfig.test.json",
         "dist": "npm-run-all lint test build docs",
         "lint": "eslint ./src/**/*.ts ./spec/**/*.ts --ext .js,.ts",
         "fix": "eslint ./src/**/*.ts ./spec/**/*.ts --ext .js,.ts --fix",
@@ -56,7 +52,6 @@
         "prettier": "^1.18.2",
         "rollup": "^1.23.1",
         "rollup-plugin-node-resolve": "^5.2.0",
-        "rollup-plugin-typescript2": "^0.24.3",
         "typescript": "^3.6.2"
     }
 }

@@ -2,6 +2,17 @@ var myLib = (function (exports) {
     'use strict';
 
     /**
+     * Available {@link AnimalSpecies} species.
+     */
+    var AnimalSpecies;
+    (function (AnimalSpecies) {
+        AnimalSpecies["HUMAN"] = "Human";
+        AnimalSpecies["BUG"] = "Bug";
+        AnimalSpecies["RUBBER_DUCK"] = "Rubber Duck";
+        AnimalSpecies["CAT"] = "Cat";
+    })(AnimalSpecies || (AnimalSpecies = {}));
+
+    /**
      * Human implementation of {@link Animal}.
      */
     class Human {
@@ -12,7 +23,7 @@ var myLib = (function (exports) {
          * @param age Age of the human.
          */
         constructor(name, age = 0) {
-            this.species = "Human" /* HUMAN */;
+            this.species = AnimalSpecies.HUMAN;
             this.age = age;
             this.name = name;
         }
