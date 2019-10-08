@@ -1,4 +1,4 @@
-import { Human } from "../src/main";
+import { Human } from "../../src/main";
 
 describe("Human", () => {
     it("is defined", () => {
