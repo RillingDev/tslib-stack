@@ -1,5 +1,5 @@
 /**
- * Available {@link AnimalSpecies} species.
+ * Available {@link Animal} species.
  */
 declare enum AnimalSpecies {
     HUMAN = "Human",

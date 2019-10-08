@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
- * Available {@link AnimalSpecies} species.
+ * Available {@link Animal} species.
  */
 var AnimalSpecies;
 (function (AnimalSpecies) {

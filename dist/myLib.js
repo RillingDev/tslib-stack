@@ -2,7 +2,7 @@ var myLib = (function (exports) {
     'use strict';
 
     /**
-     * Available {@link AnimalSpecies} species.
+     * Available {@link Animal} species.
      */
     var AnimalSpecies;
     (function (AnimalSpecies) {
