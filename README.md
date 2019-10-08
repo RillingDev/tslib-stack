@@ -11,7 +11,7 @@ A stack with everything you need when writing modern, maintainable TypeScript li
 ## Tools
 
 -   Typescript
--   TSLint
+-   ESLint
 -   Jasmine
 -   JSDoc
 -   Rollup
@@ -23,12 +23,11 @@ A stack with everything you need when writing modern, maintainable TypeScript li
     -   `main.ts` Library entry point.
 -   `specs/` Jasmine tests.
     -   `main.ts` Test entry point.
--   `dist/` Bundling output.
+-   `dist/` Compiled output.
 -   `docs/` Documentation generated from docs script.
 
 ## Scripts
 
--   `watch` Starts the rollup watcher
 -   `dist` Compiles the library, runs tests and builds docs.
 -   `build` Compiles the library.
 -   `test` Compiles and runs tests
