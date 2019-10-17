@@ -23,3 +23,4 @@ declare class Human implements Animal {
     say(msg?: string): string;
 }
 export { Human };
+//# sourceMappingURL=Human.d.ts.map

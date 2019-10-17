@@ -7,3 +7,4 @@ interface Animal {
     readonly age: number;
 }
 export { Animal };
+//# sourceMappingURL=Animal.d.ts.map

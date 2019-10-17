@@ -25,3 +25,4 @@ class Human {
     }
 }
 export { Human };
+//# sourceMappingURL=Human.js.map

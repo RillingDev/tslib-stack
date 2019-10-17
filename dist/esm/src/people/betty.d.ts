@@ -4,3 +4,4 @@ import { Human } from "../human/Human";
  */
 declare const betty: Human;
 export { betty };
+//# sourceMappingURL=betty.d.ts.map

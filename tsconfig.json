@@ -5,9 +5,11 @@
         "target": "esnext",
         "newLine": "LF",
         "strict": true,
-        "removeComments": false,
-        "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "removeComments": false,
+        "sourceMap": true,
+        "declarationMap": true,
         "composite": true
     },
     "include": [],

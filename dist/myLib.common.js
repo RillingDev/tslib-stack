@@ -52,3 +52,4 @@ const steve = new Human("Steve", 19);
 exports.Human = Human;
 exports.betty = betty;
 exports.steve = steve;
+//# sourceMappingURL=myLib.common.js.map

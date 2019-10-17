@@ -8,3 +8,4 @@ declare enum AnimalSpecies {
     CAT = "Cat"
 }
 export { AnimalSpecies };
+//# sourceMappingURL=AnimalSpecies.d.ts.map

@@ -4,3 +4,4 @@ import { Human } from "../human/Human";
  */
 const betty = new Human("Betty", 20);
 export { betty };
+//# sourceMappingURL=betty.js.map

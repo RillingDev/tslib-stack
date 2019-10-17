@@ -17,8 +17,8 @@
         "build:tsc": "tsc --build ./tsconfig.json",
         "build:bundle": "rollup -c rollup.config.js",
         "dist": "npm-run-all lint test build docs",
-        "lint": "eslint ./src/ ./spec/ --ext .ts",
-        "fix": "eslint ./src/ ./spec/ --ext .ts --fix",
+        "lint": "eslint ./src/ ./spec/src/ --ext .ts",
+        "fix": "eslint ./src/ ./spec/src/ --ext .ts --fix",
         "test": "jasmine",
         "docs": "jsdoc -c jsdoc.json"
     },

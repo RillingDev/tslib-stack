@@ -9,3 +9,4 @@ var AnimalSpecies;
     AnimalSpecies["CAT"] = "Cat";
 })(AnimalSpecies || (AnimalSpecies = {}));
 export { AnimalSpecies };
+//# sourceMappingURL=AnimalSpecies.js.map
