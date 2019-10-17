@@ -18,7 +18,7 @@
         "build:tsc": "tsc --build ./tsconfig.json",
         "build:tsc:watch": "tsc --build ./tsconfig.json -w",
         "build:bundle": "rollup -c rollup.config.js",
-        "watch": "build:tsc:watch",
+        "watch": "npm run build:tsc:watch",
         "dist": "npm-run-all lint test build docs",
         "lint": "eslint ./src/ ./spec/src/ --ext .ts",
         "fix": "eslint ./src/ ./spec/src/ --ext .ts --fix",
