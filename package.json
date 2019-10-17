@@ -2,7 +2,7 @@
     "name": "tslib-stack",
     "version": "v13.0.0",
     "description": "A small & flexible stack for building modern TypeScript libraries.",
-    "main": "./dist/cjs/main.js",
+    "main": "./dist/myLib.common.js",
     "module": "./dist/esm/main.js",
     "types": "./dist/esm/main.d.ts",
     "rollupOptions": {
@@ -13,14 +13,13 @@
     },
     "scripts": {
         "start": "npm run dist",
-        "build": "npm-run-all build:esm build:misc",
+        "build": "npm-run-all build:esm build:bundle",
         "build:esm": "tsc --build ./src/tsconfig.json",
-        "build:misc": "npm-run-all build:iife",
-        "build:iife": "rollup -c rollup.config.iife.js",
-        "build:test": "tsc --build ./tsconfig.json",
+        "build:bundle": "rollup -c rollup.config.js",
+        "build:test": "tsc --build ./spec/tsconfig.json",
         "dist": "npm-run-all lint test build docs",
-        "lint": "eslint ./src/**/*.ts ./spec/**/*.ts --ext .js,.ts",
-        "fix": "eslint ./src/**/*.ts ./spec/**/*.ts --ext .js,.ts --fix",
+        "lint": "eslint ./src/ ./spec/ --ext .ts",
+        "fix": "eslint ./src/ ./spec/ --ext .ts --fix",
         "test": "npm-run-all build:test test:jasmine",
         "test:jasmine": "jasmine",
         "docs": "jsdoc -c jsdoc.json"

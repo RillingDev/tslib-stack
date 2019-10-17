@@ -8,6 +8,10 @@ export default {
         name: rollupOptions.moduleName,
         file: `./dist/${rollupOptions.outputName}.js`,
         globals: rollupOptions.globals
+    }, {
+        format: "cjs",
+        name: rollupOptions.moduleName,
+        file: `./dist/${rollupOptions.outputName}.common.js`
     }],
     external: rollupOptions.external,
     plugins: [
