@@ -7,7 +7,6 @@ export default {
         format: "iife",
         name: rollupOptions.moduleName,
         file: `./dist/${rollupOptions.outputName}.js`,
-        sourcemap: true,
         globals: rollupOptions.globals
     }],
     external: rollupOptions.external,

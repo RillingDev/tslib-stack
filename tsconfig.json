@@ -1,17 +1,15 @@
 {
     "compilerOptions": {
         "baseUrl": "./",
-        "outDir": "./dist/esm/",
-        "declaration": true,
-        "declarationDir": "./dist/types",
-        "module": "esnext",
         "target": "esnext",
         "newLine": "LF",
         "strict": true,
-        "noImplicitAny": true,
         "removeComments": false,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true
     },
-    "include": ["src/**/*.ts"]
+    "include": [
+        "./src/",
+        "./spec/"
+    ]
 }
