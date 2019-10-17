@@ -11,11 +11,10 @@ A stack with everything you need when writing modern, maintainable TypeScript li
 ## Tools
 
 -   Typescript
--   ESLint
--   Jasmine
--   JSDoc
 -   Rollup
--   Uglify
+-   Jasmine
+-   ESLint
+-   JSDoc
 
 ## Structure
 
