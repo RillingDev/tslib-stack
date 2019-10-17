@@ -3,8 +3,8 @@
     "version": "v13.0.0",
     "description": "A small & flexible stack for building modern TypeScript libraries.",
     "main": "./dist/myLib.common.js",
-    "module": "./dist/esm/main.js",
-    "types": "./dist/esm/main.d.ts",
+    "module": "./dist/esm/src/main.js",
+    "types": "./dist/esm/src/main.d.ts",
     "rollupOptions": {
         "moduleName": "myLib",
         "outputName": "myLib",
@@ -13,15 +13,13 @@
     },
     "scripts": {
         "start": "npm run dist",
-        "build": "npm-run-all build:esm build:bundle",
-        "build:esm": "tsc --build ./src/tsconfig.json",
+        "build": "npm-run-all build:tsc build:bundle",
+        "build:tsc": "tsc --build ./tsconfig.json",
         "build:bundle": "rollup -c rollup.config.js",
-        "build:test": "tsc --build ./spec/tsconfig.json",
         "dist": "npm-run-all lint test build docs",
         "lint": "eslint ./src/ ./spec/ --ext .ts",
         "fix": "eslint ./src/ ./spec/ --ext .ts --fix",
-        "test": "npm-run-all build:test test:jasmine",
-        "test:jasmine": "jasmine",
+        "test": "jasmine",
         "docs": "jsdoc -c jsdoc.json"
     },
     "repository": {

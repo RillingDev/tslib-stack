@@ -2,7 +2,7 @@ import resolve from "rollup-plugin-node-resolve";
 import { rollupOptions } from "./package.json";
 
 export default {
-    input: `./dist/esm/main.js`,
+    input: `./dist/esm/src/main.js`,
     output: [{
         format: "iife",
         name: rollupOptions.moduleName,

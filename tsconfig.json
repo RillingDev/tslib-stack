@@ -1,15 +1,21 @@
 {
     "compilerOptions": {
+        "rootDir": "./",
         "baseUrl": "./",
         "target": "esnext",
         "newLine": "LF",
         "strict": true,
         "removeComments": false,
         "emitDecoratorMetadata": true,
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "composite": true
     },
-    "include": [
-        "./src/",
-        "./spec/"
+    "include": [],
+    "exclude": [
+        "node_modules"
+    ],
+    "references": [
+        { "path": "./src" },
+        { "path": "./spec" }
     ]
 }
