@@ -1,6 +1,7 @@
 {
     "name": "tslib-stack",
-    "version": "v13.0.0",
+    "version": "14.0.0",
+    "private": true,
     "description": "A small & flexible stack for building modern TypeScript libraries.",
     "main": "./dist/myLib.common.js",
     "module": "./dist/esm/src/main.js",
@@ -15,7 +16,9 @@
         "start": "npm run dist",
         "build": "npm-run-all build:tsc build:bundle",
         "build:tsc": "tsc --build ./tsconfig.json",
+        "build:tsc:watch": "tsc --build ./tsconfig.json -w",
         "build:bundle": "rollup -c rollup.config.js",
+        "watch": "build:tsc:watch",
         "dist": "npm-run-all lint test build docs",
         "lint": "eslint ./src/ ./spec/src/ --ext .ts",
         "fix": "eslint ./src/ ./spec/src/ --ext .ts --fix",

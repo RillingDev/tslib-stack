@@ -18,7 +18,11 @@
         "node_modules"
     ],
     "references": [
-        { "path": "./src" },
-        { "path": "./spec" }
+        {
+            "path": "./src"
+        },
+        {
+            "path": "./spec"
+        }
     ]
 }
