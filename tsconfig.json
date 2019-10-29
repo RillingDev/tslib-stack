@@ -19,7 +19,7 @@
     ],
     "references": [
         {
-            " path": "./src/tsconfig.json"
+            "path": "./src/tsconfig.json"
         },
         {
             "path": "./spec/src/tsconfig.json"
