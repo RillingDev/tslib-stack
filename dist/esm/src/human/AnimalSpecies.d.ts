@@ -1,5 +1,12 @@
 /**
+ * @packageDocumentation
+ * @module Animal
+ * @external
+ */
+/**
  * Available {@link Animal} species.
+ *
+ * @external
  */
 declare enum AnimalSpecies {
     HUMAN = "Human",

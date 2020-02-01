@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module People
+ * @internal
+ */
 import { Human } from "../human/Human";
 /**
  * A {@link Human} called Steve.

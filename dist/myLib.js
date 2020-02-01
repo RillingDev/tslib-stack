@@ -2,7 +2,14 @@ var myLib = (function (exports) {
     'use strict';
 
     /**
+     * @packageDocumentation
+     * @module Animal
+     * @external
+     */
+    /**
      * Available {@link Animal} species.
+     *
+     * @external
      */
     var AnimalSpecies;
     (function (AnimalSpecies) {
@@ -12,6 +19,11 @@ var myLib = (function (exports) {
         AnimalSpecies["CAT"] = "Cat";
     })(AnimalSpecies || (AnimalSpecies = {}));
 
+    /**
+     * @packageDocumentation
+     * @module Human
+     * @internal
+     */
     /**
      * Human implementation of {@link Animal}.
      */
@@ -39,10 +51,20 @@ var myLib = (function (exports) {
     }
 
     /**
+     * @packageDocumentation
+     * @module People
+     * @internal
+     */
+    /**
      * A {@link Human} called Betty.
      */
     const betty = new Human("Betty", 20);
 
+    /**
+     * @packageDocumentation
+     * @module People
+     * @internal
+     */
     /**
      * A {@link Human} called Steve.
      */

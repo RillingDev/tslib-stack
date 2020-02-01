@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module Human
+ * @internal
+ */
 import { AnimalSpecies } from "./AnimalSpecies";
 import { Animal } from "./Animal";
 /**

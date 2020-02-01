@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module Human
+ * @internal
+ */
 import { AnimalSpecies } from "./AnimalSpecies";
 /**
  * Human implementation of {@link Animal}.

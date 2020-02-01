@@ -1,6 +1,13 @@
+/**
+ * @packageDocumentation
+ * @module Animal
+ * @external
+ */
 import { AnimalSpecies } from "./AnimalSpecies";
 /**
  * Base interface for animal implementations.
+ *
+ * @external
  */
 interface Animal {
     readonly species: AnimalSpecies;

@@ -1,5 +1,12 @@
 /**
+ * @packageDocumentation
+ * @module Animal
+ * @external
+ */
+/**
  * Available {@link Animal} species.
+ *
+ * @external
  */
 var AnimalSpecies;
 (function (AnimalSpecies) {

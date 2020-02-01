@@ -14,7 +14,7 @@ A stack with everything you need when writing modern, maintainable TypeScript li
 -   Rollup
 -   Jasmine
 -   ESLint
--   JSDoc
+-   TypeDoc
 
 ## Structure
 
@@ -30,6 +30,6 @@ A stack with everything you need when writing modern, maintainable TypeScript li
 -   `dist` Compiles the library, runs tests and builds docs.
 -   `build` Compiles the library.
 -   `test` Compiles and runs tests
--   `docs` Generates JSDoc documentation
+-   `docs` Generates TypeDoc documentation
 -   `lint` Lints all source scripts and tests
 -   `fix` Auto-fixes issues in source scripts and tests
