@@ -4,6 +4,8 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 /**
  * Available {@link Animal} species.
+ *
+ * @private
  */
 var AnimalSpecies;
 (function (AnimalSpecies) {

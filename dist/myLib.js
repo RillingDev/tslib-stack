@@ -3,6 +3,8 @@ var myLib = (function (exports) {
 
     /**
      * Available {@link Animal} species.
+     *
+     * @private
      */
     var AnimalSpecies;
     (function (AnimalSpecies) {
