@@ -14,7 +14,7 @@
     },
     "scripts": {
         "start": "npm run dist",
-        "dist": "npm-run-all clean lint build test docs",
+        "dist": "npm-run-all clean lint build test:jasmine docs",
         "clean": "rimraf ./dist ./spec/dist ./docs",
         "build": "npm-run-all build:tsc build:bundle",
         "build:tsc": "tsc --build ./tsconfig.json",
@@ -22,7 +22,8 @@
         "watch": "tsc --build ./tsconfig.json -w",
         "lint": "eslint ./src/ ./spec/src/ --ext .ts",
         "fix": "eslint ./src/ ./spec/src/ --ext .ts --fix",
-        "test": "jasmine",
+        "test": "npm-run-all build test:jasmine",
+        "test:jasmine": "jasmine --require=source-map-support/register",
         "docs": "typedoc ./src/"
     },
     "repository": {
@@ -52,6 +53,7 @@
         "rimraf": "^3.0.1",
         "rollup": "^1.31.0",
         "rollup-plugin-node-resolve": "^5.2.0",
+        "source-map-support": "^0.5.16",
         "typedoc": "^0.16.8",
         "typescript": "^3.7.5"
     }
