@@ -2769,6 +2769,18 @@ img {
 				<li><code>dist/</code> Compiled output.</li>
 				<li><code>docs/</code> Documentation generated from docs script.</li>
 			</ul>
+			<a href="#configuration" id="configuration" style="color: inherit; text-decoration: none;">
+				<h2>Configuration</h2>
+			</a>
+			<p>When creating a new project, make sure to adapt the following in the <code>package.json</code>:</p>
+			<pre><code><span class="hljs-string">"rollupOptions"</span>: {
+    <span class="hljs-string">"moduleName"</span>: <span class="hljs-string">"myLib"</span>, <span class="hljs-regexp">//</span> Your <span class="hljs-class"><span class="hljs-keyword">module</span>/<span class="hljs-title">libraries</span> <span class="hljs-title">module</span> <span class="hljs-title">name</span> (<span class="hljs-title">used</span> <span class="hljs-title">for</span> <span class="hljs-title">CJS</span>/<span class="hljs-title">IIFE</span> <span class="hljs-title">bundles</span>).</span>
+    <span class="hljs-string">"outputName"</span>: <span class="hljs-string">"myLib"</span>, <span class="hljs-regexp">//</span> Your <span class="hljs-class"><span class="hljs-keyword">module</span>/<span class="hljs-title">libraries</span> <span class="hljs-title">output</span> <span class="hljs-title">file</span> <span class="hljs-title">name</span> (<span class="hljs-title">used</span> <span class="hljs-title">for</span> <span class="hljs-title">CJS</span>/<span class="hljs-title">IIFE</span> <span class="hljs-title">bundles</span>).</span>
+    <span class="hljs-string">"external"</span>: [], <span class="hljs-regexp">//</span> External modules (see <span class="hljs-symbol">https:</span>/<span class="hljs-regexp">/rollupjs.org/guide</span><span class="hljs-regexp">/en/</span><span class="hljs-comment">#external).</span>
+    <span class="hljs-string">"globals"</span>: {} /<span class="hljs-regexp">/ External modules global names (see https:/</span><span class="hljs-regexp">/rollupjs.org/guide</span><span class="hljs-regexp">/en/</span><span class="hljs-comment">#outputglobals).</span>
+},
+
+<span class="hljs-string">"main"</span>: <span class="hljs-string">"./dist/myLib.common.js"</span>, <span class="hljs-regexp">//</span> CJS file name, adapt according to rollupOptions.outputName from above.</code></pre>
 			<a href="#scripts" id="scripts" style="color: inherit; text-decoration: none;">
 				<h2>Scripts</h2>
 			</a>
