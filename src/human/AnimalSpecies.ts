@@ -7,7 +7,7 @@ enum AnimalSpecies {
     HUMAN = "Human",
     BUG = "Bug",
     RUBBER_DUCK = "Rubber Duck",
-    CAT = "Cat"
+    CAT = "Cat",
 }
 
 export { AnimalSpecies };
