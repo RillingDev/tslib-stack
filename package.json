@@ -14,17 +14,20 @@
     },
     "scripts": {
         "start": "npm run dist",
-        "dist": "npm-run-all clean lint build test:jasmine docs",
-        "clean": "rimraf ./dist ./spec/dist ./docs",
-        "build": "npm-run-all build:tsc build:bundle",
+        "dist": "npm-run-all lint build test docs",
+        "build": "npm-run-all clean:dist build:tsc build:bundle",
         "build:tsc": "tsc --build ./tsconfig.json",
         "build:bundle": "rollup -c rollup.config.js",
         "watch": "tsc --build ./tsconfig.json -w",
         "lint": "eslint ./src/ ./spec/src/ --ext .ts",
         "fix": "eslint ./src/ ./spec/src/ --ext .ts --fix",
-        "test": "npm-run-all build test:jasmine",
+        "test": "npm-run-all clean:test build:tsc test:jasmine",
         "test:jasmine": "jasmine --require=source-map-support/register",
-        "docs": "typedoc ./src/"
+        "docs": "npm-run-all clean:docs docs:typedoc",
+        "docs:typedoc": "typedoc ./src/",
+        "clean:dist": "rimraf ./dist",
+        "clean:test": "rimraf ./spec/dist ",
+        "clean:docs": "rimraf ./docs"
     },
     "repository": {
         "type": "git",
