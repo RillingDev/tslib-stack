@@ -30,7 +30,6 @@ module.exports = {
         "no-template-curly-in-string": "warn",
         "array-callback-return": "warn",
         "consistent-return": "warn",
-        "no-else-return": "warn",
         "no-implicit-coercion": "warn",
         "no-dupe-else-if": "warn",
         "radix": "warn",
@@ -64,7 +63,7 @@ module.exports = {
         "@typescript-eslint/consistent-type-assertions": [
             "warn",
             {
-                assertionStyle: "angle-bracket",
+                assertionStyle: "as",
             },
         ],
         "@typescript-eslint/no-extra-non-null-assertion": "warn",
