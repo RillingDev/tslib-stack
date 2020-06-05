@@ -4,6 +4,7 @@
         "rootDir": "./",
         "baseUrl": "./",
         "target": "es2019",
+        "esModuleInterop": true,
         "composite": true,
         "newLine": "LF",
         "removeComments": false,
