@@ -21,7 +21,7 @@
     "bugs": {
         "url": "https://github.com/FelixRilling/tslib-stack/issues"
     },
-    "main": "./dist/myLib.common.js",
+    "main": "./dist/main.common.js",
     "module": "./dist/esm/src/main.js",
     "types": "./dist/esm/src/main.d.ts",
     "files": [
@@ -36,7 +36,6 @@
     },
     "rollupOptions": {
         "moduleName": "myLib",
-        "outputName": "myLib",
         "external": [],
         "globals": {}
     },
