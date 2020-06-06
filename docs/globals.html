@@ -2750,7 +2750,6 @@ img {
 			</a>
 			<ul>
 				<li>Typescript</li>
-				<li>Rollup</li>
 				<li>Jasmine</li>
 				<li>ESLint</li>
 				<li>TypeDoc</li>
@@ -2763,25 +2762,10 @@ img {
 						<li><code>main.ts</code> Library entry point.</li>
 					</ul>
 				</li>
-				<li><code>specs/</code> Jasmine tests.<ul>
-						<li><code>main.ts</code> Test entry point.</li>
-					</ul>
-				</li>
+				<li><code>specs/</code> Jasmine tests.</li>
 				<li><code>dist/</code> Compiled output.</li>
 				<li><code>docs/</code> Documentation generated from docs script.</li>
 			</ul>
-			<a href="#configuration" id="configuration" style="color: inherit; text-decoration: none;">
-				<h2>Configuration</h2>
-			</a>
-			<p>When creating a new project, make sure to adapt the following in the <code>package.json</code>:</p>
-			<pre><code><span class="hljs-string">"rollupOptions"</span>: {
-    <span class="hljs-string">"moduleName"</span>: <span class="hljs-string">"myLib"</span>, <span class="hljs-regexp">//</span> Your module<span class="hljs-regexp">/libraries module name (used for CJS/</span>IIFE bundles).
-    <span class="hljs-string">"outputName"</span>: <span class="hljs-string">"myLib"</span>, <span class="hljs-regexp">//</span> Your module<span class="hljs-regexp">/libraries output file name (used for CJS/</span>IIFE bundles).
-    <span class="hljs-string">"external"</span>: [], <span class="hljs-regexp">//</span> External modules (see https:<span class="hljs-regexp">//</span>rollupjs.org<span class="hljs-regexp">/guide/</span>en/<span class="hljs-comment">#external).</span>
-    <span class="hljs-string">"globals"</span>: {} <span class="hljs-regexp">//</span> External modules global names (see https:<span class="hljs-regexp">//</span>rollupjs.org<span class="hljs-regexp">/guide/</span>en/<span class="hljs-comment">#outputglobals).</span>
-},
-
-<span class="hljs-string">"main"</span>: <span class="hljs-string">"./dist/myLib.common.js"</span>, <span class="hljs-regexp">//</span> CJS file name, adapt according to rollupOptions.outputName from above.</code></pre>
 			<a href="#scripts" id="scripts" style="color: inherit; text-decoration: none;">
 				<h2>Scripts</h2>
 			</a>

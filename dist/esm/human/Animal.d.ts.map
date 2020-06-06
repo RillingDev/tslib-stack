@@ -1,0 +1,1 @@
+{"version":3,"file":"Animal.d.ts","sourceRoot":"","sources":["../../../src/human/Animal.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAE,MAAM,iBAAiB,CAAC;AAEhD;;;;GAIG;AACH,UAAU,MAAM;IACZ,QAAQ,CAAC,OAAO,EAAE,aAAa,CAAC;IAChC,QAAQ,CAAC,GAAG,EAAE,MAAM,CAAC;CACxB;AAED,OAAO,EAAE,MAAM,EAAE,CAAC"}

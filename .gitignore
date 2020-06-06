@@ -28,3 +28,4 @@ npm-debug.*
 
 # Temp Files
 tsconfig.tsbuildinfo
+tsconfig.*.tsbuildinfo
