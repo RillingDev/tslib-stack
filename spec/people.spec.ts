@@ -1,4 +1,4 @@
-import { betty, steve } from "../../src/main";
+import { betty, steve } from "../src/main";
 
 describe("People", () => {
     it("Betty", () => {
