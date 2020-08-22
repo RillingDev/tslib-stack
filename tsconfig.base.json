@@ -12,5 +12,7 @@
             "esnext",
             "dom"
         ]
-    }
+    },
+    "include": [],
+    "exclude": ["node_modules"]
 }
