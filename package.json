@@ -1,26 +1,8 @@
 {
     "name": "tslib-stack",
     "version": "14.3.0",
-    "private": true,
-    "license": "MIT",
     "description": "A small & flexible stack for building modern TypeScript libraries.",
-    "keywords": [
-        "stack",
-        "ts"
-    ],
-    "author": {
-        "name": "Felix Rilling",
-        "email": "contact@rilling.dev",
-        "url": "https://rilling.dev"
-    },
-    "homepage": "https://github.com/FelixRilling/tslib-stack#readme",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/FelixRilling/tslib-stack.git"
-    },
-    "bugs": {
-        "url": "https://github.com/FelixRilling/tslib-stack/issues"
-    },
+    "private": true,
     "main": "./dist/cjs/main.js",
     "module": "./dist/esm/main.js",
     "types": "./dist/esm/main.d.ts",
@@ -33,11 +15,29 @@
         "start": "npm run dist",
         "dist": "npm run clean && npm run lint && npm run build && npm run test && npm run docs",
         "clean": "rimraf ./dist ./docs",
-        "build": "tsc --build tsconfig.json",
+        "build": "tsc --build ./tsconfig.json",
         "lint": "eslint ./src/ ./spec/ --ext .ts",
         "fix": "eslint ./src/ ./spec/ --ext .ts --fix",
-        "test": "ts-node --project spec/tsconfig.json node_modules/jasmine/bin/jasmine --config=jasmine.json",
+        "test": "ts-node --project ./spec/tsconfig.json node_modules/jasmine/bin/jasmine --config=./jasmine.json",
         "docs": "typedoc ./src/"
+    },
+    "keywords": [
+        "stack",
+        "ts"
+    ],
+    "author": {
+        "name": "Felix Rilling",
+        "email": "contact@rilling.dev",
+        "url": "https://rilling.dev"
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/FelixRilling/tslib-stack#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/FelixRilling/tslib-stack.git"
+    },
+    "bugs": {
+        "url": "https://github.com/FelixRilling/tslib-stack/issues"
     },
     "devDependencies": {
         "@types/jasmine": "^3.5.13",
