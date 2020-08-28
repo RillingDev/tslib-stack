@@ -108,7 +108,7 @@ module.exports = {
             {
                 selector: "default",
                 format: ["strictCamelCase"],
-                leadingUnderscore: "forbid",
+                leadingUnderscore: "allow",
                 trailingUnderscore: "forbid",
             },
             {
