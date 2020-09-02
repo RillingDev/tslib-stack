@@ -1,4 +1,4 @@
-import { AnimalSpecies } from "./AnimalSpecies";
+import type { AnimalSpecies } from "./AnimalSpecies";
 
 /**
  * Base interface for animal implementations.

@@ -1,5 +1,5 @@
 import { AnimalSpecies } from "./AnimalSpecies";
-import { Animal } from "./Animal";
+import type { Animal } from "./Animal";
 
 /**
  * Human implementation of {@link Animal}.
