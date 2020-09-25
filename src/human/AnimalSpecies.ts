@@ -1,7 +1,7 @@
 /**
  * Available {@link Animal} species.
  *
- * @private
+ * @internal
  */
 enum AnimalSpecies {
     HUMAN = "Human",
