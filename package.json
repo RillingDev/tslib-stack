@@ -1,6 +1,6 @@
 {
     "name": "tslib-stack",
-    "version": "14.3.0",
+    "version": "14.4.0",
     "description": "A small & flexible stack for building modern TypeScript libraries.",
     "private": true,
     "main": "./dist/cjs/main.js",
