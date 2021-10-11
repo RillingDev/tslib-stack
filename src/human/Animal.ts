@@ -1,12 +1,21 @@
-import type { AnimalSpecies } from "./AnimalSpecies";
+/**
+ * Available {@link Animal} species.
+ */
+export enum AnimalSpecies {
+    HUMAN = "Human",
+    BUG = "Bug",
+    /**
+     * @internal
+     */
+    RUBBER_DUCK = "Rubber Duck",
+    CAT = "Cat",
+}
 
 /**
  * Base interface for animal implementations.
  *
  */
-interface Animal {
+export interface Animal {
     readonly species: AnimalSpecies;
     readonly age: number;
 }
-
-export { Animal };

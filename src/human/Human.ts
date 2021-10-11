@@ -1,24 +1,24 @@
-import { AnimalSpecies } from "./AnimalSpecies";
+import { AnimalSpecies } from "./Animal";
 import type { Animal } from "./Animal";
 
 /**
  * Human implementation of {@link Animal}.
  */
-class Human implements Animal {
-    public readonly species: AnimalSpecies.HUMAN;
-    public readonly age: number;
-    private readonly name: string;
+export class Human implements Animal {
+    readonly species: AnimalSpecies.HUMAN;
+    readonly age: number;
+    readonly #name: string;
 
     /**
-     * Creates a new {@link Human}
+     * Creates a new {@link Human}.
      *
      * @param name Name of the human
      * @param age Age of the human.
      */
-    public constructor(name: string, age = 0) {
+    constructor(name: string, age = 0) {
         this.species = AnimalSpecies.HUMAN;
         this.age = age;
-        this.name = name;
+        this.#name = name;
     }
 
     /**
@@ -27,9 +27,11 @@ class Human implements Animal {
      * @param msg Message to say, defaults to "Hello!".
      * @returns String this human is saying.
      */
-    public say(msg = "Hello!"): string {
-        return `${this.name}(${this.age}): ${msg}`;
+    say(msg = "Hello!"): string {
+        return `${this.#name} ${this.#getMetaData()}: ${msg}`;
+    }
+
+    #getMetaData(): string {
+        return `[${this.species}, Age ${this.age}]`;
     }
 }
-
-export { Human };

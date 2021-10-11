@@ -1,11 +1,15 @@
 import { betty, steve } from "../src/main";
 
 describe("People", () => {
-    it("Betty", () => {
-        expect(betty.say("Hi!")).toBe("Betty(20): Hi!");
+    describe("Betty", () => {
+        it("says hi", () => {
+            expect(betty.say("Hi!")).toBe("Betty [Human, Age 20]: Hi!");
+        });
     });
 
-    it("Steve", () => {
-        expect(steve.say()).toBe("Steve(19): Hello!");
+    describe("Steve", () => {
+        it("says hi", () => {
+            expect(steve.say("Hi!")).toBe("Steve [Human, Age 19]: Hi!");
+        });
     });
 });
