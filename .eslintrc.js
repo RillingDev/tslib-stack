@@ -5,15 +5,12 @@ module.exports = {
         tsconfigRootDir: __dirname,
         project: ["./src/tsconfig.json", "./spec/tsconfig.json"],
     },
-    plugins: ["@typescript-eslint", "prettier", "import"],
+    plugins: ["@typescript-eslint", "prettier"],
     extends: [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
-        "prettier",
-        "plugin:import/errors",
-        "plugin:import/warnings",
-        "plugin:import/typescript",
+        "prettier"
     ],
     rules: {
         /*
@@ -37,21 +34,7 @@ module.exports = {
          */
         "prettier/prettier": "warn",
 
-        /*
-         * Imports
-         */
-        // Error prevention
-        "import/no-unresolved": "off", // Covered by TS
-        "import/named": "off", // Covered by TS
-        "import/namespace": "off", // Covered by TS
-        "import/no-self-import": "error",
-        "import/no-absolute-path": "error",
-        "import/no-mutable-exports": "warn",
-        "import/no-webpack-loader-syntax": "warn",
 
-        // Styleguide
-        "import/no-default-export": "warn",
-        "import/no-useless-path-segments": "warn",
 
         /*
          * Typescript
