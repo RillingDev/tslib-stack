@@ -1,11 +1,12 @@
 /**
  * Available {@link Animal} species.
- *
- * @internal
  */
 enum AnimalSpecies {
     HUMAN = "Human",
     BUG = "Bug",
+    /**
+     * @internal
+     */
     RUBBER_DUCK = "Rubber Duck",
     CAT = "Cat",
 }
