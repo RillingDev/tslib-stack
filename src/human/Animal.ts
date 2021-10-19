@@ -2,13 +2,13 @@
  * Available {@link Animal} species.
  */
 export enum AnimalSpecies {
-    HUMAN = "Human",
-    BUG = "Bug",
-    /**
-     * @internal
-     */
-    RUBBER_DUCK = "Rubber Duck",
-    CAT = "Cat",
+	HUMAN = "Human",
+	BUG = "Bug",
+	/**
+	 * @internal
+	 */
+	RUBBER_DUCK = "Rubber Duck",
+	CAT = "Cat",
 }
 
 /**
@@ -16,6 +16,6 @@ export enum AnimalSpecies {
  *
  */
 export interface Animal {
-    readonly species: AnimalSpecies;
-    readonly age: number;
+	readonly species: AnimalSpecies;
+	readonly age: number;
 }
