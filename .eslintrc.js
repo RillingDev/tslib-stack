@@ -5,7 +5,7 @@ module.exports = {
 		tsconfigRootDir: __dirname,
 		project: ["./src/tsconfig.json", "./spec/tsconfig.json"],
 	},
-	plugins: ["@typescript-eslint", "prettier"],
+	plugins: ["@typescript-eslint", "prettier", "import"],
 	extends: [
 		"eslint:recommended",
 		"plugin:@typescript-eslint/recommended",
@@ -96,5 +96,15 @@ module.exports = {
 		"@typescript-eslint/prefer-string-starts-ends-with": "warn",
 		"@typescript-eslint/require-array-sort-compare": "warn",
 		"@typescript-eslint/strict-boolean-expressions": "warn",
+
+		/*
+		 * Imports
+		 */
+		"import/no-absolute-path": "error",
+		"import/no-cycle": "warn",
+		"import/no-default-export": "warn",
+		"import/no-mutable-exports": "warn",
+		"import/no-useless-path-segments": "warn",
+		"import/no-webpack-loader-syntax": "warn",
 	},
 };
