@@ -1,7 +1,7 @@
 {
 	"extends": "./tsconfig.src.json",
 	"compilerOptions": {
-		"module": "ESNext",
+		// "module": <inherited from base config>,
 		"outDir": "../dist/esm/"
 	}
 }

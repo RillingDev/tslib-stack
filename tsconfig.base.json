@@ -7,6 +7,7 @@
 		"strict": true,
 		// Per-project
 		"target": "ES2021",
+		"module": "ES2020",
 		"lib": ["ESNext"]
 	},
 	"include": [],
