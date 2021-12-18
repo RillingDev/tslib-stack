@@ -1,7 +1,0 @@
-{
-	"extends": "./tsconfig.src.json",
-	"compilerOptions": {
-		// "module": <inherited from base config>,
-		"outDir": "../dist/esm/"
-	}
-}
