@@ -11,7 +11,7 @@ A stack with everything you need when writing modern, maintainable TypeScript li
 ## Tools
 
 - Typescript
-- Jasmine
+- Jest
 - ESLint
 - TypeDoc
 
@@ -19,7 +19,7 @@ A stack with everything you need when writing modern, maintainable TypeScript li
 
 - `src/` Contains the main library code.
 	- `main.ts` Library entry point.
-- `specs/` Jasmine tests.
+- `__tests__/` Jest tests.
 - `dist/` Compiled output.
 - `docs/` Documentation generated from docs script.
 
