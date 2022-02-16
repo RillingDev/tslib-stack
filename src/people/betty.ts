@@ -1,4 +1,4 @@
-import { Human } from "../human/Human";
+import { Human } from "../human/Human.js";
 
 /**
  * A {@link Human} called Betty.

@@ -1,5 +1,5 @@
-import type { Animal } from "./Animal";
-import { AnimalSpecies } from "./Animal";
+import type { Animal } from "./Animal.js";
+import { AnimalSpecies } from "./Animal.js";
 
 /**
  * Human implementation of {@link Animal}.

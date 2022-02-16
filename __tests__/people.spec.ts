@@ -1,5 +1,5 @@
-import { betty } from "../src/people/betty";
-import { steve } from "../src/people/steve";
+import { betty } from "../src/people/betty.js";
+import { steve } from "../src/people/steve.js";
 
 describe("People", () => {
 	describe("Betty", () => {
