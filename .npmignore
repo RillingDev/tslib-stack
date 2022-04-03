@@ -30,10 +30,7 @@ npm-debug.*
 tsconfig.tsbuildinfo
 tsconfig.*.tsbuildinfo
 
-
-
 # Source Files
-src/
 __tests__/
 
 # Config/Infrastructure Files
@@ -44,4 +41,5 @@ typedoc.json
 jest.config.js
 tsconfig.base.json
 tsconfig.json
+src/tsconfig.json
 .github/
