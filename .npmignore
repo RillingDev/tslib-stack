@@ -30,16 +30,15 @@ npm-debug.*
 tsconfig.tsbuildinfo
 tsconfig.*.tsbuildinfo
 
-# Source Files
-__tests__/
-
-# Config/Infrastructure Files
-.eslintrc.json
-.eslintignore
+# Infrastructure Files
 .editorconfig
-typedoc.json
+.eslintignore
+.eslintrc.json
+.gitattributes
+.gitignore
 jest.config.js
 tsconfig.base.json
-tsconfig.json
-src/tsconfig.json
+typedoc.json
 .github/
+src/tsconfig.json
+__tests__/
