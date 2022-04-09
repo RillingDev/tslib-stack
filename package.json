@@ -3,6 +3,24 @@
 	"version": "15.0.0",
 	"description": "A small & flexible stack for building modern TypeScript libraries.",
 	"private": true,
+	"keywords": [
+		"stack",
+		"ts"
+	],
+	"homepage": "https://github.com/FelixRilling/tslib-stack#readme",
+	"bugs": {
+		"url": "https://github.com/FelixRilling/tslib-stack/issues"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Felix Rilling",
+		"email": "contact@rilling.dev",
+		"url": "https://rilling.dev"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/FelixRilling/tslib-stack.git"
+	},
 	"type": "module",
 	"exports": "./dist/main.js",
 	"scripts": {
@@ -15,24 +33,7 @@
 		"test": "jest",
 		"docs": "typedoc"
 	},
-	"keywords": [
-		"stack",
-		"ts"
-	],
-	"author": {
-		"name": "Felix Rilling",
-		"email": "contact@rilling.dev",
-		"url": "https://rilling.dev"
-	},
-	"license": "MIT",
-	"homepage": "https://github.com/FelixRilling/tslib-stack#readme",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/FelixRilling/tslib-stack.git"
-	},
-	"bugs": {
-		"url": "https://github.com/FelixRilling/tslib-stack/issues"
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"@types/jest": "^27.4.1",
 		"@typescript-eslint/eslint-plugin": "^5.18.0",
