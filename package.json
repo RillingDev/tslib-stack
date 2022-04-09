@@ -4,11 +4,7 @@
 	"description": "A small & flexible stack for building modern TypeScript libraries.",
 	"private": true,
 	"type": "module",
-	"exports": {
-		".": {
-			"import": "./dist/main.js"
-		}
-	},
+	"exports": "./dist/main.js",
 	"scripts": {
 		"start": "npm run dist",
 		"dist": "npm run clean && npm run lint && npm run build && npm run test && npm run docs",
