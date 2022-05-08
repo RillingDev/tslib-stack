@@ -31,3 +31,7 @@ A stack with everything you need when writing modern, maintainable TypeScript li
 - `docs` Generates TypeDoc documentation
 - `lint` Lints all source scripts and tests
 - `fix` Auto-fixes issues in source scripts and tests
+
+## Compatibility
+
+Designed to be used on Linux and similar systems.
