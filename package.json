@@ -27,7 +27,7 @@
 	"scripts": {
 		"start": "npm run dist",
 		"dist": "npm run clean && npm run lint && npm run build && npm run test && npm run docs",
-		"clean": "rimraf ./dist ./docs",
+		"clean": "rimraf ./dist",
 		"build": "tsc --build ./src/tsconfig.json",
 		"lint": "eslint ./src/ ./__tests__/ --ext .ts",
 		"fix": "eslint ./src/ ./__tests__/ --ext .ts --fix",
