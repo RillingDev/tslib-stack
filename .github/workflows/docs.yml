@@ -12,17 +12,30 @@ jobs:
             matrix:
                 node-version: [18.x]
 
+        # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+        permissions:
+            contents: read
+            pages: write # to deploy to Pages
+            id-token: write # to verify the deployment originates from an appropriate source
+
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+
         steps:
-            - uses: actions/checkout@v3.0.2
+            - uses: actions/checkout@v3
             - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v3.4.1
+              uses: actions/setup-node@v3
               with:
                   node-version: ${{ matrix.node-version }}
             - run: npm ci
             - run: npm run docs
-            - name: Deploy
-              uses: peaceiris/actions-gh-pages@v3.8.0
+            - name: Setup Pages
+              uses: actions/configure-pages@v2
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@v1
               with:
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
-                  publish_dir: ./docs
-                  publish_branch: gh-pages
+                  path: './docs'
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v1
