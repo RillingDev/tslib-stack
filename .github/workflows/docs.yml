@@ -8,14 +8,10 @@ jobs:
     docs:
         runs-on: ubuntu-latest
 
-        strategy:
-            matrix:
-                node-version: [18.x]
-
         # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
         permissions:
             contents: read
-            pages: write # to deploy to Pages
+            pages: write
             id-token: write # to verify the deployment originates from an appropriate source
 
         environment:
@@ -24,18 +20,14 @@ jobs:
 
         steps:
             - uses: actions/checkout@v3
-            - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v3
+            - uses: actions/setup-node@v3
               with:
-                  node-version: ${{ matrix.node-version }}
+                  node-version: 18
             - run: npm ci
             - run: npm run docs
-            - name: Setup Pages
-              uses: actions/configure-pages@v2
-            - name: Upload artifact
-              uses: actions/upload-pages-artifact@v1
+            - uses: actions/configure-pages@v2
+            - uses: actions/upload-pages-artifact@v1
               with:
-                  path: './docs'
-            - name: Deploy to GitHub Pages
+                  path: "./docs"
+            - uses: actions/deploy-pages@v1
               id: deployment
-              uses: actions/deploy-pages@v1
