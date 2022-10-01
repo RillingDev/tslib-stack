@@ -4,10 +4,11 @@
 		"newLine": "LF",
 		"moduleResolution": "Node16",
 		"strict": true,
-		// Per-project
 		"esModuleInterop": true,
-		"module": "ES2022",
-		"target": "ES2022"
+		"allowSyntheticDefaultImports": true,
+		// Per-project
+		"module": "ES2020",
+		"target": "ES2020"
 	},
 	"include": [],
 	"exclude": ["node_modules"]
