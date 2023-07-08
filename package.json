@@ -11,7 +11,7 @@
 	"bugs": {
 		"url": "https://github.com/FelixRilling/tslib-stack/issues"
 	},
-	"license": "MIT",
+	"license": "Apache-2.0",
 	"author": {
 		"name": "Felix Rilling",
 		"email": "contact@rilling.dev",
