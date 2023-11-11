@@ -1,15 +1,11 @@
 {
 	"compilerOptions": {
-		// General
-		"newLine": "LF",
+		"target": "ES2022",
+		"module": "Node16",
 		"moduleResolution": "Node16",
-		"strict": true,
+		"skipLibCheck": true,
 		"esModuleInterop": true,
-		"allowSyntheticDefaultImports": true,
-		// Per-project
-		"module": "ES2022",
-		"target": "ES2022"
-	},
-	"include": [],
-	"exclude": ["node_modules"]
+		"strict": true,
+		"forceConsistentCasingInFileNames": true
+	}
 }
